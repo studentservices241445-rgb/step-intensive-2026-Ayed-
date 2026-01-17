@@ -15,7 +15,7 @@
 
   let bank;
   try{
-    const res = await fetch('data/questions.json', {cache: 'no-store'});
+    const res = await fetch('questions.json', {cache: 'no-store'});
     bank = await res.json();
   }catch(e){
     mount.innerHTML = `<div class="container"><div class="card"><h2>تعذر تحميل أسئلة الاختبار</h2><p class="muted">تأكد إنك فتحت الصفحة من نفس رابط الموقع (GitHub Pages) وليس من ملف محلي.</p></div></div>`;
