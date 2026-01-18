@@ -40,8 +40,8 @@ function toast(message, kind='info'){
 
 // --------- Navbar
 function initNavbar(){
-  const burger = qs('#burger');
-  const nav = qs('#navLinks');
+  const burger = qs('[data-nav-toggle]') || qs('#burger') || qs('#navToggle');
+  const nav = qs('[data-nav]') || qs('#navLinks') || qs('#nav');
   if(burger && nav){
     burger.addEventListener('click', ()=> nav.classList.toggle('open'));
     qsa('a', nav).forEach(a=>a.addEventListener('click', ()=> nav.classList.remove('open')));
@@ -49,7 +49,10 @@ function initNavbar(){
 
   // active link
   const path = location.pathname.split('/').pop() || 'index.html';
-  qsa('a[data-page]').forEach(a=>{
+  const candidates = nav ? qsa('a', nav) : qsa('a[data-page]');
+  candidates.forEach(a=>{
+    const href = a.getAttribute('href') || '';
+    if(href.endsWith(path)){ a.classList.add('active'); }
     if(a.getAttribute('data-page') === path){ a.classList.add('active'); }
   });
 }
@@ -147,7 +150,7 @@ function renderCountdown(){
 
 // --------- Ticker (top news bar)
 function initTicker(){
-  const bar = qs('#ticker');
+  const bar = qs('[data-ticker]') || qs('#ticker') || qs('#tickerText');
   if(!bar) return;
   const items = window.AYED_TICKER || [];
   if(!items.length) return;
@@ -155,7 +158,12 @@ function initTicker(){
   let i = 0;
   const set = ()=>{
     const msg = items[i % items.length];
-    bar.querySelector('.tickerText').textContent = msg;
+    const textNode = bar.querySelector?.('.tickerText') || bar.querySelector?.('.ticker-text');
+    if(textNode){
+      textNode.textContent = msg;
+    }else{
+      bar.textContent = msg;
+    }
     i++;
   };
   set();
