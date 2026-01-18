@@ -4,9 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="الموقع الرسمي للتسجيل في دورة STEP المكثفة 2026 — اختبار تحديد مستوى وخطة مذاكرة." />
-  <meta name="theme-color" content="#0b0f14" />
+  <meta name="theme-color" content="#f7c948" />
   <title>STEP | دورة عايد المكثفة 2026 — الموقع الرسمي</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="assets/icon-192.svg" />
 </head>
 <body>
   <div class="top-ticker" data-ticker></div>
@@ -14,6 +16,7 @@
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">ع</span>
         <div>
           <div class="brand-title">أكاديمية عايد الرسمية</div>
           <div class="brand-sub">STEP | الدورة المكثفة 2026</div>
@@ -225,6 +228,8 @@
     </div>
     <div class="wrap tiny">© 2026 — جميع الحقوق محفوظة</div>
   </footer>
+
+  <div id="toasts" class="toast-wrap" aria-live="polite" aria-atomic="true"></div>
 
   <script src="site-data.js"></script>
   <script src="app.js"></script>

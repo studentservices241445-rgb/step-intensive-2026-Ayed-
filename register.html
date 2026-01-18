@@ -4,9 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="نموذج التسجيل وتأكيد الدفع — دورة عايد المكثفة 2026" />
-  <meta name="theme-color" content="#0b0f14" />
+  <meta name="theme-color" content="#f7c948" />
   <title>التسجيل وتأكيد الدفع | دورة عايد المكثفة 2026</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="assets/icon-192.svg" />
 </head>
 <body>
   <div class="topbar" data-topbar>
@@ -23,6 +25,7 @@
   <header class="header">
     <div class="container nav">
       <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">ع</span>
         <div>
           <div class="brand-title">دورة عايد المكثفة 2026</div>
           <div class="brand-sub">التسجيل الرسمي</div>
@@ -65,6 +68,8 @@
       </div>
     </div>
   </footer>
+
+  <div id="toasts" class="toast-wrap" aria-live="polite" aria-atomic="true"></div>
 
   <script defer src="site-data.js"></script>
   <script defer src="app.js"></script>

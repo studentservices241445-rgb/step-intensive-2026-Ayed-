@@ -37,6 +37,7 @@ function toast(message, kind='info'){
   qs('.x', t).addEventListener('click', rm);
   setTimeout(rm, 5200);
 }
+AYED.toast = toast;
 
 // --------- Navbar
 function initNavbar(){
@@ -248,6 +249,14 @@ function guardRegistration(){
   }
 }
 
+// --------- PWA
+function initServiceWorker(){
+  if(!('serviceWorker' in navigator)) return;
+  window.addEventListener('load', ()=>{
+    navigator.serviceWorker.register('service-worker.js').catch(()=>{});
+  });
+}
+
 // --------- Init
 document.addEventListener('DOMContentLoaded', ()=>{
   initNavbar();
@@ -259,4 +268,5 @@ document.addEventListener('DOMContentLoaded', ()=>{
   initCopyButtons();
   initAssistant();
   guardRegistration();
+  initServiceWorker();
 });
