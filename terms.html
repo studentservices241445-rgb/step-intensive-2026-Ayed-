@@ -8,7 +8,16 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="top-ticker" data-ticker></div>
+  <div class="top-ticker">
+    <div class="wrap ticker-inner">
+      <div class="ticker-badge">تحديثات</div>
+      <div class="ticker-text" data-ticker></div>
+      <div class="ticker-actions">
+        <a class="mini-link" href="level-test.html">اختبار المستوى</a>
+        <a class="mini-link" href="register.html">التسجيل</a>
+      </div>
+    </div>
+  </div>
 
   <header class="site-header">
     <div class="wrap header-inner">
@@ -20,16 +29,15 @@
         </div>
       </a>
 
-      <button class="nav-toggle" aria-label="فتح القائمة" data-nav-toggle>≡</button>
+      <button class="nav-toggle" aria-label="فتح القائمة" data-nav-toggle>☰</button>
 
       <nav class="nav" data-nav>
-        <a href="index.html">الرئيسية</a>
-        <a href="course-content.html" class="active">محتوى الدورة</a>
-        <a href="level-test.html">اختبار تحديد المستوى</a>
-        <a href="testimonials.html">آراء الطلاب</a>
-        <a href="faq.html">الأسئلة الشائعة</a>
-        <a href="support.html">الدعم</a>
-        <a href="register.html" class="btn btn-gold">التسجيل / تأكيد الدفع</a>
+        <a href="index.html" data-page="index.html">الرئيسية</a>
+        <a href="course-content.html" data-page="course-content.html">محتوى الدورة</a>
+        <a href="level-test.html" data-page="level-test.html">اختبار تحديد المستوى</a>
+        <a href="testimonials.html" data-page="testimonials.html">آراء الطلاب</a>
+        <a href="faq.html" data-page="faq.html">الأسئلة الشائعة</a>
+        <a href="register.html" data-page="register.html" class="btn btn-gold">التسجيل / تأكيد الدفع</a>
       </nav>
     </div>
   </header>
@@ -39,16 +47,17 @@
       <h1>الشروط والأحكام</h1>
       <div class="card">
         <ol class="steps">
-          <li><strong>استخدام الموقع:</strong> محتوى الموقع للتعريف والخدمات المرتبطة بالدورة فقط.</li>
-          <li><strong>سرية المحتوى:</strong> المحتوى المدفوع (ملفات/قنوات/ملاحظات) للاستخدام الشخصي فقط... مشاركته أو إعادة نشره يضر حقوقك وحقوق الآخرين.</li>
+          <li><strong>استخدام الموقع:</strong> الموقع مخصص للتسجيل والخدمات المرتبطة بالدورة فقط.</li>
+          <li><strong>سرية المحتوى:</strong> المحتوى المدفوع للاستخدام الشخصي فقط، وأي مشاركة غير مصرح بها تضر بحقوق الجميع.</li>
           <li><strong>التواصل:</strong> تأكيد التسجيل يتم عبر الرسالة الجاهزة في صفحة التسجيل وإرسال الإيصال.</li>
-          <li><strong>تغييرات المحتوى:</strong> قد نحدّث ترتيب الدروس أو نضيف مواد تحسين بدون ما يضر الخطة الأساسية.</li>
-          <li><strong>المسؤولية:</strong> النتائج تعتمد على التزامك بالخطة وتنفيذها، وإحنا نوفر لك أدوات تساعدك تمشي بثبات.</li>
+          <li><strong>تحديث المحتوى:</strong> قد يتم تحديث المحتوى بما يخدم جودة الخطة دون التأثير على الأساسيات.</li>
+          <li><strong>المسؤولية:</strong> النتائج تعتمد على التزامك بالخطة، ونحن نوفر لك المسار الواضح والدعم المناسب.</li>
         </ol>
-        <p class="muted">إذا عندك أي ملاحظة على الشروط، اكتبها في صفحة الدعم ويطلع لك قالب رسالة مرتب.</p>
+        <p class="muted">لأي ملاحظة على الشروط، تواصل معنا عبر صفحة الدعم.</p>
       </div>
     </section>
   </main>
+
   <footer class="footer">
     <div class="wrap footer-grid">
       <div>
@@ -68,13 +77,41 @@
         <div class="footer-title">التواصل</div>
         <div class="footer-links">
           <a href="https://t.me/Academy_Ayed_2026" target="_blank" rel="noopener">قروب التنبيهات الرسمي</a>
-          <a href="https://t.me/ayedacadmeybot" target="_blank" rel="noopener">بوت المحتوى المجاني</a>
-          <a href="https://t.me/Ayed_Academy_2026" target="_blank" rel="noopener">حساب الأكاديمية (تلجرام)</a>
+          <a href="https://t.me/ayedacadmeybot" target="_blank" rel="noopener">بوت المحتوى</a>
+          <a href="https://t.me/Ayed_Academy_2026" target="_blank" rel="noopener">حساب الأكاديمية</a>
         </div>
       </div>
     </div>
     <div class="wrap footer-bottom">© 2026 أكاديمية عايد — جميع الحقوق محفوظة.</div>
   </footer>
+
+  <div id="toasts" class="toast-wrap" aria-live="polite"></div>
+  <button class="assistant-fab" id="assistantBtn" aria-label="مساعد التسجيل">💬</button>
+  <div class="assistant-panel" id="assistantPanel">
+    <div class="assistant-card" role="dialog" aria-modal="true">
+      <div class="assistant-head">
+        <div>
+          <div class="assistant-title">مساعد التسجيل</div>
+          <div class="assistant-sub">نساعدك في أي استفسار.</div>
+        </div>
+        <button class="assistant-close" data-close-assistant>إغلاق</button>
+      </div>
+      <div class="assistant-body">
+        <div class="assistant-message" id="assistantMessage">إذا لديك سؤال حول الشروط، تواصل معنا عبر الدعم.</div>
+        <div class="assistant-group">
+          <div class="assistant-label">تنقل سريع</div>
+          <div class="assistant-actions">
+            <button class="chip" data-jump="support.html">الدعم</button>
+            <button class="chip" data-jump="faq.html">الأسئلة الشائعة</button>
+          </div>
+        </div>
+      </div>
+      <div class="assistant-footer">
+        <button class="btn btn-gold" data-jump="level-test.html">ابدأ اختبار تحديد المستوى</button>
+        <a class="btn assistant-register disabled" aria-disabled="true" href="register.html">التسجيل</a>
+      </div>
+    </div>
+  </div>
 
   <script src="site-data.js"></script>
   <script src="app.js"></script>

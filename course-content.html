@@ -8,7 +8,16 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="top-ticker" data-ticker></div>
+  <div class="top-ticker">
+    <div class="wrap ticker-inner">
+      <div class="ticker-badge">تحديثات</div>
+      <div class="ticker-text" data-ticker></div>
+      <div class="ticker-actions">
+        <a class="mini-link" href="level-test.html">اختبار المستوى</a>
+        <a class="mini-link" href="register.html">التسجيل</a>
+      </div>
+    </div>
+  </div>
 
   <header class="site-header">
     <div class="wrap header-inner">
@@ -20,124 +29,120 @@
         </div>
       </a>
 
-      <button class="nav-toggle" aria-label="فتح القائمة" data-nav-toggle>≡</button>
+      <button class="nav-toggle" aria-label="فتح القائمة" data-nav-toggle>☰</button>
 
       <nav class="nav" data-nav>
-        <a href="index.html">الرئيسية</a>
-        <a href="course-content.html" class="active">محتوى الدورة</a>
-        <a href="level-test.html">اختبار تحديد المستوى</a>
-        <a href="testimonials.html">آراء الطلاب</a>
-        <a href="faq.html">الأسئلة الشائعة</a>
-        <a href="support.html">الدعم</a>
-        <a href="register.html" class="btn btn-gold">التسجيل / تأكيد الدفع</a>
+        <a href="index.html" data-page="index.html">الرئيسية</a>
+        <a href="course-content.html" data-page="course-content.html">محتوى الدورة</a>
+        <a href="level-test.html" data-page="level-test.html">اختبار تحديد المستوى</a>
+        <a href="testimonials.html" data-page="testimonials.html">آراء الطلاب</a>
+        <a href="faq.html" data-page="faq.html">الأسئلة الشائعة</a>
+        <a href="register.html" data-page="register.html" class="btn btn-gold">التسجيل / تأكيد الدفع</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="section">
-      <div class="wrap">
-        <div class="section-head">
-          <h1>وش بتاخذ داخل الدورة؟ (بشكل مرتب وواضح)</h1>
-          <p class="muted">هنا نعطيك الصورة كاملة: ملفات، نماذج، تكنيكات، ومراجعات — عشان ما تتشتت بين مليون مصدر.</p>
-        </div>
+    <section class="wrap section">
+      <div class="section-head">
+        <h1>محتوى الدورة بشكل مرتب وواضح</h1>
+        <p class="muted">كل ما تحتاجه في مكان واحد: محاضرات، ملفات، نماذج، وكويزات — بدون تشتيت.</p>
+      </div>
 
+      <div class="card">
+        <h2>1) المحاضرات التمهيدية</h2>
+        <ul class="list">
+          <li>Grammar تمهيدي (شرح + تمارين)</li>
+          <li>Reading تمهيدي (محلول وغير محلول)</li>
+          <li>Listening تمهيدي (محلول وغير محلول)</li>
+        </ul>
+        <p class="hint">هدفها تثبيت الأساس قبل الدخول للنماذج المكثفة.</p>
+      </div>
+
+      <div class="grid-2">
         <div class="card">
-          <h2>1) المحاضرات التمهيدية (تأسيس سريع)</h2>
+          <h2>2) Grammar (القواعد)</h2>
           <ul class="list">
-            <li>قرامر تمهيدي (شرح + تمارين)</li>
-            <li>ريدينق تمهيدي (محلول وغير محلول)</li>
-            <li>ليسننق تمهيدي (محلول وغير محلول)</li>
-          </ul>
-          <p class="hint">هدفها: تضبط أساسك بسرعة قبل لا تدخل على النماذج الثقيلة.</p>
-        </div>
-
-        <div class="grid-2">
-          <div class="card">
-            <h2>2) Grammar (القواعد)</h2>
-            <ul class="list">
-              <li>ملف شرح القواعد (محلول/غير محلول)</li>
-              <li>أسئلة مراجعة القواعد (محلول/غير محلول)</li>
-              <li>مراجعة أول 8 قواعد (محلولة)</li>
-              <li>نماذج Grammar (محلولة/غير محلولة)</li>
-              <li>نماذج خاصة (مثل نموذج 49 محلول/غير محلول)</li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <h2>3) الاستثناءات (اللي تغيّب عن كثير)</h2>
-            <ul class="list">
-              <li>استثناءات القواعد (محلول/غير محلول)</li>
-              <li>أمثلة مركّزة على نقاط اللخبطة المتكررة</li>
-            </ul>
-            <p class="hint">هنا الفرق بين "أعرف القاعدة" و"أجيبها صح وقت الضغط".</p>
-          </div>
-        </div>
-
-        <div class="grid-2">
-          <div class="card">
-            <h2>4) Reading (القطع)</h2>
-            <ul class="list">
-              <li>استراتيجيات الريدينق (محلول/غير محلول)</li>
-              <li>نماذج Reading 2025 (محلول/غير محلول)</li>
-              <li>القطع الأكثر تكرارًا (محلول/غير محلول)</li>
-              <li>كبسولة الإنقاذ (مراجعة سريعة وقت قرب الاختبار)</li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <h2>5) Listening (الاستماع)</h2>
-            <ul class="list">
-              <li>استراتيجيات الليسننق</li>
-              <li>نماذج Listening (محلولة/غير محلولة)</li>
-              <li>نماذج بدون مقاطع (للتدريب على الفكرة قبل الصوت)</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="card">
-          <h2>6) إضافات مهمّة (اللي ترفع درجتك بسرعة)</h2>
-          <div class="grid-3">
-            <div class="mini-card"><div class="mini-title">Vocabulary</div><div class="mini-note">كلمات ومعاني + مرادفات</div></div>
-            <div class="mini-card"><div class="mini-title">تصريفات الأفعال</div><div class="mini-note">أكثر التصريفات اللي تجي</div></div>
-            <div class="mini-card"><div class="mini-title">التكنيكات</div><div class="mini-note">قرامر + ريدينق + ليسننق</div></div>
-          </div>
-          <div class="divider"></div>
-          <ul class="list">
-            <li>خرائط مفاهيم (قواعد) + ملخصات سريعة</li>
-            <li>جداول مذاكرة جاهزة (حسب وقت اختبارك)</li>
-            <li>هدايا عايد + كلمات لازم تحفظها</li>
-            <li>روابط شرح إضافية (لو تبغى شرح بديل لبعض الجزئيات)</li>
+            <li>شرح القواعد (محلول/غير محلول)</li>
+            <li>أسئلة مراجعة القواعد (محلول/غير محلول)</li>
+            <li>مراجعة أول 8 قواعد (محلولة)</li>
+            <li>نماذج Grammar متنوعة</li>
+            <li>نماذج خاصة بأسئلة متقدمة</li>
           </ul>
         </div>
 
         <div class="card">
-          <h2>7) مراجعة القطع الأكثر تكرارًا (مثال)</h2>
-          <p class="muted">من القطع اللي تكررت كثير مؤخرًا (كمراجعة قوية):</p>
-          <div class="tags">
-            <span class="tag">النحل</span>
-            <span class="tag">الفوبيا</span>
-            <span class="tag">علم النفس</span>
-            <span class="tag">سنغافورة</span>
-            <span class="tag">الساعات</span>
-            <span class="tag">الفيتامينات</span>
-            <span class="tag">البستاني</span>
-            <span class="tag">محمد علي كلاي</span>
-            <span class="tag">النانو</span>
-            <span class="tag">النفايات السامة</span>
-          </div>
-          <p class="hint">ملاحظة: القائمة تتحدّث باستمرار داخل التنبيهات بالموقع حسب اللي يكثر.</p>
+          <h2>3) الاستثناءات</h2>
+          <ul class="list">
+            <li>استثناءات القواعد (محلول/غير محلول)</li>
+            <li>أمثلة مركّزة على نقاط اللخبطة المتكررة</li>
+          </ul>
+          <p class="hint">تركز على النقاط اللي تفرق في الدرجة وقت الاختبار.</p>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h2>4) Reading (القطع)</h2>
+          <ul class="list">
+            <li>استراتيجيات الريدينق (محلول/غير محلول)</li>
+            <li>نماذج Reading 2025 (محلول/غير محلول)</li>
+            <li>القطع الأكثر تكرارًا (محلول/غير محلول)</li>
+            <li>كبسولة الإنقاذ (مراجعة سريعة قبل الاختبار)</li>
+          </ul>
         </div>
 
-        <div class="cta">
-          <h2>قبل التسجيل… سو اختبار تحديد المستوى 🎯</h2>
-          <p>الاختبار يعطيك خطة مذاكرة مفصلة + يطلع لك السعر بعد النتيجة. لا تدفع وأنت محتار.</p>
-          <div class="cta-row">
-            <a class="btn btn-gold" href="level-test.html">ابدأ الاختبار الآن</a>
-            <a class="btn btn-ghost" href="register.html">انتقل للتسجيل</a>
-          </div>
+        <div class="card">
+          <h2>5) Listening (الاستماع)</h2>
+          <ul class="list">
+            <li>استراتيجيات الليسننق</li>
+            <li>نماذج Listening (محلولة/غير محلولة)</li>
+            <li>نماذج بدون مقاطع للتدريب على الفكرة</li>
+          </ul>
         </div>
+      </div>
 
+      <div class="card">
+        <h2>6) إضافات ترفع الدرجة بسرعة</h2>
+        <div class="grid-3">
+          <div class="mini-card"><div class="mini-title">Vocabulary</div><div class="mini-note">كلمات ومعاني + مرادفات</div></div>
+          <div class="mini-card"><div class="mini-title">تصريفات الأفعال</div><div class="mini-note">أكثر التصريفات اللي تجي</div></div>
+          <div class="mini-card"><div class="mini-title">التكنيكات</div><div class="mini-note">Grammar + Reading + Listening</div></div>
+        </div>
+        <div class="divider"></div>
+        <ul class="list">
+          <li>خرائط مفاهيم وملخصات سريعة</li>
+          <li>جداول مذاكرة جاهزة حسب موعد اختبارك</li>
+          <li>كلمات مهمة ومتكررة في الاختبارات</li>
+          <li>روابط شرح إضافية لمن يحتاج مسارًا مكمّلًا</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>7) نماذج القطع المتكررة</h2>
+        <p class="muted">قائمة أحدث القطع التي تتكرر في الاختبارات الأخيرة:</p>
+        <div class="tags">
+          <span class="tag">النحل</span>
+          <span class="tag">الفوبيا</span>
+          <span class="tag">علم النفس</span>
+          <span class="tag">سنغافورة</span>
+          <span class="tag">الساعات</span>
+          <span class="tag">الفيتامينات</span>
+          <span class="tag">البستاني</span>
+          <span class="tag">محمد علي كلاي</span>
+          <span class="tag">النانو</span>
+          <span class="tag">النفايات السامة</span>
+        </div>
+        <p class="hint">يتم تحديث القائمة ضمن تنبيهات الموقع حسب المستجدات.</p>
+      </div>
+
+      <div class="cta">
+        <h2>ابدأ باختبار تحديد المستوى</h2>
+        <p>الاختبار يعطيك خطة مذاكرة مفصلة ويظهر لك السعر بعد النتيجة.</p>
+        <div class="cta-row">
+          <a class="btn btn-gold" href="level-test.html">ابدأ الاختبار الآن</a>
+          <a class="btn btn-ghost" href="register.html">التسجيل بعد النتيجة</a>
+        </div>
       </div>
     </section>
   </main>
@@ -161,13 +166,49 @@
         <div class="footer-title">التواصل</div>
         <div class="footer-links">
           <a href="https://t.me/Academy_Ayed_2026" target="_blank" rel="noopener">قروب التنبيهات الرسمي</a>
-          <a href="https://t.me/ayedacadmeybot" target="_blank" rel="noopener">بوت المحتوى المجاني</a>
-          <a href="https://t.me/Ayed_Academy_2026" target="_blank" rel="noopener">حساب الأكاديمية (تلجرام)</a>
+          <a href="https://t.me/ayedacadmeybot" target="_blank" rel="noopener">بوت المحتوى</a>
+          <a href="https://t.me/Ayed_Academy_2026" target="_blank" rel="noopener">حساب الأكاديمية</a>
         </div>
       </div>
     </div>
     <div class="wrap footer-bottom">© 2026 أكاديمية عايد — جميع الحقوق محفوظة.</div>
   </footer>
+
+  <div id="toasts" class="toast-wrap" aria-live="polite"></div>
+  <button class="assistant-fab" id="assistantBtn" aria-label="مساعد التسجيل">💬</button>
+  <div class="assistant-panel" id="assistantPanel">
+    <div class="assistant-card" role="dialog" aria-modal="true">
+      <div class="assistant-head">
+        <div>
+          <div class="assistant-title">مساعد التسجيل</div>
+          <div class="assistant-sub">اختر وجهتك أو ابدأ الاختبار مباشرة.</div>
+        </div>
+        <button class="assistant-close" data-close-assistant>إغلاق</button>
+      </div>
+      <div class="assistant-body">
+        <div class="assistant-message" id="assistantMessage">كيف نقدر نساعدك اليوم؟</div>
+        <div class="assistant-group">
+          <div class="assistant-label">تنقل سريع</div>
+          <div class="assistant-actions">
+            <button class="chip" data-jump="level-test.html">اختبار المستوى</button>
+            <button class="chip" data-jump="register.html">التسجيل</button>
+            <button class="chip" data-jump="faq.html">الأسئلة الشائعة</button>
+          </div>
+        </div>
+        <div class="assistant-group">
+          <div class="assistant-label">أسئلة سريعة</div>
+          <div class="assistant-actions">
+            <button class="chip" data-answer="السعر يظهر بعد انتهاء الاختبار مع الخطة.">متى يظهر السعر؟</button>
+            <button class="chip" data-answer="الاختبار قصير ويتم حفظ التقدم تلقائيًا.">هل يحفظ التقدم؟</button>
+          </div>
+        </div>
+      </div>
+      <div class="assistant-footer">
+        <button class="btn btn-gold" data-jump="level-test.html">ابدأ اختبار تحديد المستوى</button>
+        <a class="btn assistant-register disabled" aria-disabled="true" href="register.html">التسجيل</a>
+      </div>
+    </div>
+  </div>
 
   <script src="site-data.js"></script>
   <script src="app.js"></script>

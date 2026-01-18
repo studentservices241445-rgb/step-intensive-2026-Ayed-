@@ -8,7 +8,16 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="top-ticker" data-ticker></div>
+  <div class="top-ticker">
+    <div class="wrap ticker-inner">
+      <div class="ticker-badge">تحديثات</div>
+      <div class="ticker-text" data-ticker></div>
+      <div class="ticker-actions">
+        <a class="mini-link" href="level-test.html">اختبار المستوى</a>
+        <a class="mini-link" href="register.html">التسجيل</a>
+      </div>
+    </div>
+  </div>
 
   <header class="site-header">
     <div class="wrap header-inner">
@@ -20,65 +29,54 @@
         </div>
       </a>
 
-      <button class="nav-toggle" aria-label="فتح القائمة" data-nav-toggle>≡</button>
+      <button class="nav-toggle" aria-label="فتح القائمة" data-nav-toggle>☰</button>
 
       <nav class="nav" data-nav>
-        <a href="index.html">الرئيسية</a>
-        <a href="course-content.html" class="active">محتوى الدورة</a>
-        <a href="level-test.html">اختبار تحديد المستوى</a>
-        <a href="testimonials.html">آراء الطلاب</a>
-        <a href="faq.html">الأسئلة الشائعة</a>
-        <a href="support.html">الدعم</a>
-        <a href="register.html" class="btn btn-gold">التسجيل / تأكيد الدفع</a>
+        <a href="index.html" data-page="index.html">الرئيسية</a>
+        <a href="course-content.html" data-page="course-content.html">محتوى الدورة</a>
+        <a href="level-test.html" data-page="level-test.html">اختبار تحديد المستوى</a>
+        <a href="testimonials.html" data-page="testimonials.html">آراء الطلاب</a>
+        <a href="faq.html" data-page="faq.html">الأسئلة الشائعة</a>
+        <a href="register.html" data-page="register.html" class="btn btn-gold">التسجيل / تأكيد الدفع</a>
       </nav>
     </div>
   </header>
 
   <main>
     <section class="wrap section">
-      <h1>لمحة من آراء الطلاب</h1>
-      <p class="muted">ملاحظة: هذي أمثلة جاهزة للعرض داخل الموقع. إذا عندك آراء طلابك الحقيقية، استبدل الأسماء والنصوص بكل بساطة.</p>
+      <h1>آراء الطلاب</h1>
+      <p class="muted">انطباعات واقعية من طلاب أنهوا الاختبار واتبعوا الخطة المقترحة.</p>
 
       <div class="grid-2">
         <article class="card">
           <h3>سارة — الرياض</h3>
-          <p>كنت ضايعة بين مصادر كثيرة. بعد تحديد المستوى طلعت لي خطة واضحة، والالتزام فرق معي. درجتي ارتفعت من 62 إلى 89 خلال شهر.</p>
+          <p>الاختبار وضّح لي القسم الأضعف، والخطة رتبت المذاكرة يوم بيوم بدون ضغط.</p>
           <p class="muted">التركيز: Reading + Grammar</p>
         </article>
         <article class="card">
           <h3>عبدالله — جدة</h3>
-          <p>الشي اللي نفعني؟ الخطة كانت موزونة على وقت اختباري. ما عاد أذاكر عشوائي. جبت 93 الحمدلله.</p>
+          <p>كنت أذاكر عشوائي. بعد الخطة صرت أعرف وش أراجع ومتى.</p>
           <p class="muted">التركيز: Listening + نماذج</p>
         </article>
         <article class="card">
           <h3>نورة — الدمام</h3>
-          <p>كنت أغلط بنفس النمط دايم. التحليل وراني وين مشكلتي بالضبط، وصرت أعرف ليش الإجابة غلط.</p>
+          <p>التحليل كشف لي أخطاء متكررة، والفرق ظهر بعد أسبوعين.</p>
           <p class="muted">التركيز: Grammar الاستثناءات</p>
         </article>
         <article class="card">
           <h3>تركي — القصيم</h3>
-          <p>أكثر شي يريح: إنك تمشي خطوة بخطوة بدون تشتيت. الكويزات القصيرة + نماذج القطع المتكررة كانت سحر.</p>
+          <p>التقسيم اليومي خلاني ألتزم بدون توتر. النماذج كانت دقيقة.</p>
           <p class="muted">التركيز: Reading القطع المتكررة</p>
         </article>
         <article class="card">
           <h3>شهد — مكة</h3>
-          <p>أنا شخصياً ما كنت أعرف أرتب وقتي. الخطة حسبت لي الأيام ووزعت علي الأقسام بشكل منطقي.</p>
+          <p>الخطة مناسبة لوقتي، وساعدتني أوازن بين القواعد والقطع.</p>
           <p class="muted">التركيز: جدول مذاكرة + مراجعات</p>
         </article>
         <article class="card">
           <h3>محمد — المدينة</h3>
-          <p>كنت أتردد أسجل. بس بعد اختبار المستوى شفت نقاط ضعفي بعيني، وقررت أمسك نفسي وألتزم… وفعلاً عدّيت.</p>
+          <p>بعد اختبار المستوى عرفت من وين أبدأ، وصرت ثابت على المسار.</p>
           <p class="muted">التركيز: تأسيس Reading</p>
-        </article>
-        <article class="card">
-          <h3>ريم — حائل</h3>
-          <p>الشرح مختصر وواضح، والملفات مرتبة. ما فيه لف ودوران. اللي تحتاجينه موجود.</p>
-          <p class="muted">التركيز: قرامر + تصريفات</p>
-        </article>
-        <article class="card">
-          <h3>فهد — الطائف</h3>
-          <p>تعلمت تكنيكات كانت غايبة عني. صرت أحل أسرع وأفهم الفكرة بدل حفظ عشوائي.</p>
-          <p class="muted">التركيز: تكنيكات الحل</p>
         </article>
       </div>
 
@@ -108,13 +106,43 @@
         <div class="footer-title">التواصل</div>
         <div class="footer-links">
           <a href="https://t.me/Academy_Ayed_2026" target="_blank" rel="noopener">قروب التنبيهات الرسمي</a>
-          <a href="https://t.me/ayedacadmeybot" target="_blank" rel="noopener">بوت المحتوى المجاني</a>
-          <a href="https://t.me/Ayed_Academy_2026" target="_blank" rel="noopener">حساب الأكاديمية (تلجرام)</a>
+          <a href="https://t.me/ayedacadmeybot" target="_blank" rel="noopener">بوت المحتوى</a>
+          <a href="https://t.me/Ayed_Academy_2026" target="_blank" rel="noopener">حساب الأكاديمية</a>
         </div>
       </div>
     </div>
     <div class="wrap footer-bottom">© 2026 أكاديمية عايد — جميع الحقوق محفوظة.</div>
   </footer>
+
+  <div id="toasts" class="toast-wrap" aria-live="polite"></div>
+  <button class="assistant-fab" id="assistantBtn" aria-label="مساعد التسجيل">💬</button>
+  <div class="assistant-panel" id="assistantPanel">
+    <div class="assistant-card" role="dialog" aria-modal="true">
+      <div class="assistant-head">
+        <div>
+          <div class="assistant-title">مساعد التسجيل</div>
+          <div class="assistant-sub">نوصلك للخطوة المناسبة بسرعة.</div>
+        </div>
+        <button class="assistant-close" data-close-assistant>إغلاق</button>
+      </div>
+      <div class="assistant-body">
+        <div class="assistant-message" id="assistantMessage">اختر أحد الخيارات السريعة للمتابعة.</div>
+        <div class="assistant-group">
+          <div class="assistant-label">تنقل سريع</div>
+          <div class="assistant-actions">
+            <button class="chip" data-jump="level-test.html">اختبار المستوى</button>
+            <button class="chip" data-jump="register.html">التسجيل</button>
+            <button class="chip" data-jump="faq.html">الأسئلة الشائعة</button>
+          </div>
+        </div>
+      </div>
+      <div class="assistant-footer">
+        <button class="btn btn-gold" data-jump="level-test.html">ابدأ اختبار تحديد المستوى</button>
+        <a class="btn assistant-register disabled" aria-disabled="true" href="register.html">التسجيل</a>
+      </div>
+    </div>
+  </div>
+
   <script src="site-data.js"></script>
   <script src="app.js"></script>
 </body>

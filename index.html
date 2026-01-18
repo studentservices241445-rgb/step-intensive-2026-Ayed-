@@ -10,7 +10,16 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="top-ticker" data-ticker></div>
+  <div class="top-ticker">
+    <div class="wrap ticker-inner">
+      <div class="ticker-badge">تحديثات</div>
+      <div class="ticker-text" data-ticker></div>
+      <div class="ticker-actions">
+        <a class="mini-link" href="level-test.html">اختبار المستوى</a>
+        <a class="mini-link" href="register.html">التسجيل</a>
+      </div>
+    </div>
+  </div>
 
   <header class="site-header">
     <div class="wrap header-inner">
@@ -25,23 +34,23 @@
       <button class="nav-toggle" aria-label="فتح القائمة" data-nav-toggle>☰</button>
 
       <nav class="nav" data-nav>
-        <a href="index.html" class="active">الرئيسية</a>
-        <a href="course-content.html">محتوى الدورة</a>
-        <a href="level-test.html">اختبار تحديد المستوى</a>
-        <a href="testimonials.html">آراء الطلاب</a>
-        <a href="faq.html">الأسئلة الشائعة</a>
-        <a href="register.html" class="btn btn-gold">التسجيل / تأكيد الدفع</a>
+        <a href="index.html" data-page="index.html">الرئيسية</a>
+        <a href="course-content.html" data-page="course-content.html">محتوى الدورة</a>
+        <a href="level-test.html" data-page="level-test.html">اختبار تحديد المستوى</a>
+        <a href="testimonials.html" data-page="testimonials.html">آراء الطلاب</a>
+        <a href="faq.html" data-page="faq.html">الأسئلة الشائعة</a>
+        <a href="register.html" data-page="register.html" class="btn btn-gold">التسجيل / تأكيد الدفع</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero watermark">
+    <section class="hero">
       <div class="wrap hero-grid">
         <div>
-          <div class="pill">متوافق مع نمط أسئلة قياس 2026 + تدريب عملي بدون تشتت</div>
-          <h1>خلّ خطتك واضحة… قبل لا تدفع ريال واحد.</h1>
-          <p class="lead">هنا ما نعطيك كلام عام. أول شي تسوي <strong>اختبار تحديد مستوى</strong> قصير، وبعده يطلع لك <strong>تحليل نقاط ضعفك</strong> + <strong>خطة مذاكرة مناسبة لوقت اختبارك</strong>، وبعدها فقط يبان لك سعر الاشتراك وخطوات التفعيل.</p>
+          <div class="pill">خطة واضحة + اختبار تشخيصي قبل أي قرار</div>
+          <h1>خطتك تبدأ هنا… قبل أي التزام.</h1>
+          <p class="lead">اختبار تحديد المستوى يعطيك تحليلًا دقيقًا لنقاط القوة والضعف، وخطة مذاكرة مناسبة لوقت اختبارك. بعدها فقط يظهر لك سعر الاشتراك وخطوات التفعيل.</p>
 
           <div class="cta-row">
             <a href="level-test.html" class="btn btn-gold">ابدأ اختبار تحديد المستوى</a>
@@ -50,161 +59,159 @@
 
           <div class="mini-grid">
             <div class="mini-card">
-              <div class="mini-title">⏳ العدّاد</div>
+              <div class="mini-title">⏳ موعد الدفعة</div>
               <div class="mini-value" data-countdown>—</div>
-              <div class="mini-note">آخر موعد للدفعة الحالية: 29/01/2026</div>
+              <div class="mini-note">نقفل التسجيل مع اكتمال المقاعد الحالية.</div>
             </div>
             <div class="mini-card" data-seats-card>
               <div class="mini-title">🪑 المقاعد المتبقية</div>
               <div class="mini-value"><span data-seats>—</span> مقعد</div>
-              <div class="mini-note">قد تُضاف مقاعد حسب ضغط التسجيل</div>
+              <div class="mini-note">يتم تحديث العدد تلقائيًا حسب الإقبال.</div>
             </div>
           </div>
-
-          <div class="hint">ملاحظة: الموقع تدريبي مستقل، وليس جهة رسمية تابعة لقياس.</div>
         </div>
 
         <div class="hero-card">
           <h2>وش اللي يميّز الدورة المكثفة؟</h2>
           <ul class="checklist">
             <li><strong>خطة مخصصة</strong> حسب وقت اختبارك ومستواك.</li>
-            <li>تجميعات + نماذج + كويزات… مع طريقة مراجعة الأخطاء.</li>
-            <li>ترتيب واضح للأقسام: Grammar / Reading / Listening + استثناءات.</li>
-            <li>محتوى مُحدّث ويتركز على اللي يجيب نتيجة فعلًا.</li>
-            <li>وصول للمحتوى <strong>90 يوم</strong> من تاريخ التفعيل + دعم خلال المدة.</li>
+            <li>نماذج وكويزات مركّزة مع طريقة واضحة لمراجعة الأخطاء.</li>
+            <li>ترتيب واضح للأقسام: Grammar / Reading / Listening.</li>
+            <li>محتوى مُحدّث يركّز على الأسئلة الأكثر تكرارًا.</li>
+            <li>وصول للمحتوى <strong>90 يوم</strong> من تاريخ التفعيل.</li>
           </ul>
 
           <div class="note">
             <div class="note-title">🔎 قبل التسجيل</div>
-            <p>ننصحك تبدأ بالاختبار… يعطيك خطة وتعرف وش تذاكر بالضبط. بعدها تدخل على التسجيل وأنت واثق ومتحمس.</p>
+            <p>ابدأ بالاختبار أولًا لتستلم خطة مفصلة وتعرف بالضبط كيف تبدأ مذاكرتك.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="wrap section">
-      <h2>الطريقة المختصرة… بدون لف ودوران</h2>
+    <section class="wrap section" id="how">
+      <h2>طريقك للاختبار… خطوة بخطوة</h2>
       <div class="steps">
         <div class="step">
           <div class="step-num">1</div>
           <div>
-            <div class="step-title">اختبر مستواك</div>
-            <div class="step-desc">أسئلة تشخيصية + تحليل فوري لنقاط الضعف.</div>
+            <div class="step-title">اختبار تحديد المستوى</div>
+            <div class="step-desc">أسئلة قصيرة تعطيك صورة دقيقة عن مستواك الحقيقي.</div>
           </div>
         </div>
         <div class="step">
           <div class="step-num">2</div>
           <div>
-            <div class="step-title">استلم خطة مذاكرة</div>
-            <div class="step-desc">خطة واضحة حسب وقت اختبارك + وش تركز عليه بكل قسم.</div>
+            <div class="step-title">خطة مذاكرة مفصلة</div>
+            <div class="step-desc">نوزّع مذاكرتك حسب وقتك ونقاطك الأضعف.</div>
           </div>
         </div>
         <div class="step">
           <div class="step-num">3</div>
           <div>
-            <div class="step-title">يطلع لك سعر الاشتراك</div>
-            <div class="step-desc">السعر يظهر بعد الاختبار عشان ما يجيك تشتت أو قرار متسرع.</div>
+            <div class="step-title">يظهر السعر بعد النتيجة</div>
+            <div class="step-desc">قرارك يكون هادئ وواضح بعد الخطة والنتيجة.</div>
           </div>
         </div>
         <div class="step">
           <div class="step-num">4</div>
           <div>
-            <div class="step-title">تحويل + إرفاق الإيصال</div>
-            <div class="step-desc">ترفع الإيصال بالموقع (إجباري) وتُرسل الطلب للمنسق بالتليجرام.</div>
-          </div>
-        </div>
-        <div class="step">
-          <div class="step-num">5</div>
-          <div>
-            <div class="step-title">تفعيل سريع</div>
-            <div class="step-desc">بعد المراجعة يتم تفعيل اشتراكك بأقرب وقت، وتوصلك طريقة الدخول للمحتوى.</div>
+            <div class="step-title">التسجيل وتأكيد الدفع</div>
+            <div class="step-desc">نموذج سريع يجهّز رسالة جاهزة للتفعيل.</div>
           </div>
         </div>
       </div>
 
-      <div class="center" style="margin-top:18px">
+      <div class="cta-row">
         <a class="btn btn-gold" href="level-test.html">ابدأ الآن — اختبار تحديد المستوى</a>
+        <a class="btn btn-ghost" href="register.html">التسجيل بعد النتيجة</a>
       </div>
     </section>
 
     <section class="wrap section grid-2">
       <div class="card">
         <h3>قروب التنبيهات الرسمي</h3>
-        <p class="muted">تحديثات المحتوى + عروض + مواعيد وخطط مذاكرة (بدون إزعاج).</p>
-        <a class="btn btn-ghost" href="https://t.me/Academy_Ayed_2026" target="_blank" rel="noopener">الدخول لقروب التنبيهات</a>
+        <p class="muted">تنبيهات مركّزة عن المواعيد والتحديثات المهمة.</p>
+        <a class="btn btn-ghost" href="https://t.me/Academy_Ayed_2026" target="_blank" rel="noopener">الدخول للقروب</a>
       </div>
       <div class="card">
-        <h3>بوت مجاني للتجميعات والكويزات</h3>
-        <p class="muted">محتوى مجاني يساعدك قبل التسجيل ويعطيك فكرة عن الأسلوب.</p>
+        <h3>بوت المراجعة السريعة</h3>
+        <p class="muted">تذكيرات يومية وكويزات خفيفة قبل الاختبار.</p>
         <a class="btn btn-ghost" href="https://t.me/ayedacadmeybot" target="_blank" rel="noopener">فتح البوت</a>
       </div>
     </section>
 
     <section class="wrap section">
       <div class="section-head">
-        <h2>لمحة من آراء الطلاب</h2>
+        <h2>آراء طلابنا</h2>
         <a class="link" href="testimonials.html">عرض الكل</a>
       </div>
       <div class="testimonials">
         <article class="t-card">
           <div class="t-top">
-            <div class="avatar">ش</div>
+            <div class="avatar">س</div>
             <div>
-              <div class="t-name">شهد</div>
-              <div class="t-meta">الرياض • خطة 7 أيام</div>
+              <div class="t-name">سارة</div>
+              <div class="t-meta">الرياض • خطة 14 يوم</div>
             </div>
             <div class="stars">★★★★★</div>
           </div>
-          <p>كنت متشتتة بين مصادر كثير… الاختبار عطاني خطة واضحة، ركزت على أخطائي وجبت فرق ملحوظ بالدرجة.</p>
+          <p>الخطة رتبت مذاكرتي من أول أسبوع، وصرت أعرف وش أراجع كل يوم بدون تشتت.</p>
         </article>
         <article class="t-card">
           <div class="t-top">
-            <div class="avatar">ت</div>
+            <div class="avatar">أ</div>
             <div>
-              <div class="t-name">تركي</div>
-              <div class="t-meta">جدة • خطة 14 يوم</div>
+              <div class="t-name">أحمد</div>
+              <div class="t-meta">جدة • خطة 7 أيام</div>
             </div>
             <div class="stars">★★★★★</div>
           </div>
-          <p>أكثر شيء أفادني طريقة مراجعة الأخطاء… صرت أعرف ليش الإجابة صح وليش أنا غلطت.</p>
+          <p>النتيجة أوضحت لي القسم الأضعف، وهذا ساعدني أرفع الدرجة بسرعة.</p>
+        </article>
+        <article class="t-card">
+          <div class="t-top">
+            <div class="avatar">ن</div>
+            <div>
+              <div class="t-name">نورة</div>
+              <div class="t-meta">الدمام • خطة 30 يوم</div>
+            </div>
+            <div class="stars">★★★★★</div>
+          </div>
+          <p>المحتوى مرتب والخطة واضحة. ما عاد أضيع بين مصادر مختلفة.</p>
         </article>
         <article class="t-card">
           <div class="t-top">
             <div class="avatar">ع</div>
             <div>
-              <div class="t-name">عبير</div>
-              <div class="t-meta">الدمام • خطة 30 يوم</div>
+              <div class="t-name">عبدالرحمن</div>
+              <div class="t-meta">مكة • خطة مرنة</div>
             </div>
             <div class="stars">★★★★★</div>
           </div>
-          <p>خطة المذاكرة كانت موزونة، لا هي ضغطتني ولا خلتني أتهاون. ممتازة للي يبي يلتزم.</p>
+          <p>الاختبار أعطاني تصور واضح لمستواي، وخلاني أبدأ بخطة مناسبة جدًا.</p>
         </article>
       </div>
     </section>
 
     <section class="wrap section">
       <div class="section-head">
-        <h2>أسئلة شائعة (مختصر)</h2>
+        <h2>أسئلة شائعة مختصرة</h2>
         <a class="link" href="faq.html">كل الأسئلة</a>
       </div>
       <div class="accordion">
         <details>
-          <summary>ليش السعر ما يطلع من البداية؟</summary>
-          <div class="muted">لأن هدفنا أول شي نفهم وضعك ونرسم لك خطة مناسبة… بعدها تشوف السعر وتقرر وأنت واثق.</div>
+          <summary>ليش السعر ما يظهر من البداية؟</summary>
+          <div class="acc-body">لأن الهدف أولًا تعرف مستواك والخطة الأنسب لك، وبعدها تشوف السعر وأنت مرتاح.</div>
         </details>
         <details>
-          <summary>هل لازم أرفق الإيصال بالموقع؟</summary>
-          <div class="muted">إيه، الإيصال إلزامي… وبعد ما يفتح لك التليجرام، أرفقه مرة ثانية بالخاص للتأكيد النهائي.</div>
+          <summary>هل التسجيل إلزامي بعد الاختبار؟</summary>
+          <div class="acc-body">أبدًا. الاختبار يعطيك خطة، وبعدها تختار اللي يناسبك.</div>
         </details>
         <details>
-          <summary>كيف يتم التفعيل؟</summary>
-          <div class="muted">بعد إرسال الطلب بالتليجرام مع الإيصال، يتم التفعيل بأقرب وقت حسب وصول التحويل.</div>
+          <summary>كيف أبدأ؟</summary>
+          <div class="acc-body">ابدأ باختبار تحديد المستوى، بعدها تظهر لك الخطة وخطوات التفعيل.</div>
         </details>
-      </div>
-
-      <div class="center" style="margin-top:18px">
-        <a class="btn btn-gold" href="level-test.html">ابدأ اختبار المستوى</a>
-        <a class="btn btn-ghost" href="register.html">التسجيل / تأكيد الدفع</a>
       </div>
     </section>
   </main>
@@ -212,21 +219,60 @@
   <footer class="site-footer">
     <div class="wrap footer-grid">
       <div>
-        <div class="footer-brand">أكاديمية عايد الرسمية</div>
-        <div class="muted">موقع تسجيل وتفعيل دورة STEP المكثفة 2026.</div>
+        <div class="footer-title">أكاديمية عايد الرسمية</div>
+        <div class="muted">موقع التسجيل الرسمي لدورة STEP المكثفة 2026.</div>
       </div>
       <div class="footer-links">
         <a href="privacy.html">سياسة الخصوصية</a>
         <a href="refund.html">سياسة الاسترجاع</a>
-        <a href="terms.html">الشروط والتعهد</a>
+        <a href="terms.html">الشروط والأحكام</a>
         <a href="support.html">الدعم والشكاوى</a>
       </div>
       <div class="footer-links">
-        <a href="https://t.me/Ayed_Academy_2026" target="_blank" rel="noopener">الاستفسار والتفعيل: @Ayed_Academy_2026</a>
+        <a href="https://t.me/Ayed_Academy_2026" target="_blank" rel="noopener">التواصل عبر تليجرام</a>
       </div>
     </div>
-    <div class="wrap tiny">© 2026 — جميع الحقوق محفوظة</div>
+    <div class="wrap footer-bottom">© 2026 — جميع الحقوق محفوظة</div>
   </footer>
+
+  <div id="toasts" class="toast-wrap" aria-live="polite"></div>
+
+  <button class="assistant-fab" id="assistantBtn" aria-label="مساعد التسجيل">💬</button>
+  <div class="assistant-panel" id="assistantPanel">
+    <div class="assistant-card" role="dialog" aria-modal="true">
+      <div class="assistant-head">
+        <div>
+          <div class="assistant-title">مساعد التسجيل</div>
+          <div class="assistant-sub">خطوات واضحة وسريعة للوصول للخطة والتسجيل.</div>
+        </div>
+        <button class="assistant-close" data-close-assistant>إغلاق</button>
+      </div>
+      <div class="assistant-body">
+        <div class="assistant-message" id="assistantMessage">أهلًا! اختر من الخيارات السريعة للوصول للمعلومة أو ابدأ الاختبار الآن.</div>
+        <div class="assistant-group">
+          <div class="assistant-label">تنقل سريع</div>
+          <div class="assistant-actions">
+            <button class="chip" data-jump="level-test.html">اختبار المستوى</button>
+            <button class="chip" data-jump="course-content.html">محتوى الدورة</button>
+            <button class="chip" data-jump="testimonials.html">آراء الطلاب</button>
+            <button class="chip" data-jump="faq.html">الأسئلة الشائعة</button>
+          </div>
+        </div>
+        <div class="assistant-group">
+          <div class="assistant-label">أسئلة سريعة</div>
+          <div class="assistant-actions">
+            <button class="chip" data-answer="يظهر السعر بعد اكتمال الاختبار مباشرة مع الخطة المناسبة لك.">متى يظهر السعر؟</button>
+            <button class="chip" data-answer="الاختبار يستغرق دقائق قليلة وسؤال واحد في كل مرة مع حفظ تلقائي لتقدمك.">كم يستغرق الاختبار؟</button>
+            <button class="chip" data-answer="يمكنك التسجيل بعد ظهور النتيجة والخطة، والتفعيل يتم بعد مراجعة الإيصال.">كيف يتم التفعيل؟</button>
+          </div>
+        </div>
+      </div>
+      <div class="assistant-footer">
+        <button class="btn btn-gold" data-jump="level-test.html">ابدأ اختبار تحديد المستوى</button>
+        <a class="btn assistant-register disabled" aria-disabled="true" href="register.html">التسجيل</a>
+      </div>
+    </div>
+  </div>
 
   <script src="site-data.js"></script>
   <script src="app.js"></script>

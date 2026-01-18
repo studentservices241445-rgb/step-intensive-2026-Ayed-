@@ -8,7 +8,16 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="top-ticker" data-ticker></div>
+  <div class="top-ticker">
+    <div class="wrap ticker-inner">
+      <div class="ticker-badge">تحديثات</div>
+      <div class="ticker-text" data-ticker></div>
+      <div class="ticker-actions">
+        <a class="mini-link" href="level-test.html">اختبار المستوى</a>
+        <a class="mini-link" href="register.html">التسجيل</a>
+      </div>
+    </div>
+  </div>
 
   <header class="site-header">
     <div class="wrap header-inner">
@@ -20,16 +29,15 @@
         </div>
       </a>
 
-      <button class="nav-toggle" aria-label="فتح القائمة" data-nav-toggle>≡</button>
+      <button class="nav-toggle" aria-label="فتح القائمة" data-nav-toggle>☰</button>
 
       <nav class="nav" data-nav>
-        <a href="index.html">الرئيسية</a>
-        <a href="course-content.html" class="active">محتوى الدورة</a>
-        <a href="level-test.html">اختبار تحديد المستوى</a>
-        <a href="testimonials.html">آراء الطلاب</a>
-        <a href="faq.html">الأسئلة الشائعة</a>
-        <a href="support.html">الدعم</a>
-        <a href="register.html" class="btn btn-gold">التسجيل / تأكيد الدفع</a>
+        <a href="index.html" data-page="index.html">الرئيسية</a>
+        <a href="course-content.html" data-page="course-content.html">محتوى الدورة</a>
+        <a href="level-test.html" data-page="level-test.html">اختبار تحديد المستوى</a>
+        <a href="testimonials.html" data-page="testimonials.html">آراء الطلاب</a>
+        <a href="faq.html" data-page="faq.html">الأسئلة الشائعة</a>
+        <a href="register.html" data-page="register.html" class="btn btn-gold">التسجيل / تأكيد الدفع</a>
       </nav>
     </div>
   </header>
@@ -37,77 +45,44 @@
   <main>
     <section class="wrap section">
       <h1>الأسئلة الشائعة</h1>
-      <p class="muted">جاوبنا هنا أكثر الأشياء اللي تنسأل دايم. وإذا عندك حالة مختلفة تمامًا، ادخل صفحة الدعم وخله يطلع لك رسالة جاهزة للتواصل.</p>
+      <p class="muted">جمعنا لك أكثر الأسئلة تكرارًا لتكون الصورة واضحة بالكامل.</p>
 
       <div class="accordion">
         <details open>
           <summary>وش فكرة اختبار تحديد المستوى؟</summary>
-          <div class="acc-body">
-            يعطيك تشخيص سريع لمستواك (Grammar / Reading / Listening) + يقترح لك خطة مذاكرة حسب موعد اختبارك.
-          </div>
+          <div class="acc-body">اختبار قصير يحدد مستواك في Grammar وReading وListening، ويخرج لك بخطة مذاكرة مناسبة.</div>
         </details>
-
         <details>
           <summary>هل التسجيل إلزامي بعد الاختبار؟</summary>
-          <div class="acc-body">
-            لا. تقدر تسوي الاختبار وتشوف الخطة أول—وبعدها تقرر. الفكرة إنك ما تدفع وانت مو متأكد وين نقاط ضعفك.
-          </div>
+          <div class="acc-body">لا. النتيجة والخطة تظهر لك أولًا، وبعدها تقرر.</div>
         </details>
-
         <details>
           <summary>متى يظهر السعر؟</summary>
-          <div class="acc-body">
-            السعر المخفّض يظهر لك بعد ما يطلع تقرير الاختبار والخطة.
-          </div>
+          <div class="acc-body">السعر يظهر بعد ظهور النتيجة والخطة مباشرة.</div>
         </details>
-
         <details>
           <summary>كيف أعرف المقاعد المتبقية؟</summary>
-          <div class="acc-body">
-            بتحصل عدّاد مقاعد واضح في الصفحة الرئيسية. الهدف إن الواحد يلحق قبل ما يقفل العدد.
-          </div>
+          <div class="acc-body">يوجد عداد واضح في الصفحة الرئيسية ويتم تحديثه تلقائيًا.</div>
         </details>
-
         <details>
           <summary>وش طريقة الدفع؟</summary>
-          <div class="acc-body">
-            التحويل البنكي على بيانات الأكاديمية (تلقاها داخل صفحة التسجيل) + ترسل إيصال التحويل عبر تليجرام.
-          </div>
+          <div class="acc-body">التحويل البنكي على بيانات الأكاديمية الموجودة في صفحة التسجيل، ثم إرسال الإيصال.</div>
         </details>
-
         <details>
-          <summary>كم مدة تفعيل الدخول بعد الدفع؟</summary>
-          <div class="acc-body">
-            غالبًا خلال نفس اليوم (أو خلال 24 ساعة كحد أقصى في أوقات الضغط). وإذا تأخر التفعيل، صفحة الدعم تساعدك ترسل بلاغ مرتب.
-          </div>
+          <summary>كم مدة التفعيل بعد الدفع؟</summary>
+          <div class="acc-body">عادة خلال نفس اليوم أو خلال 24 ساعة في أوقات الضغط.</div>
         </details>
-
         <details>
-          <summary>هل فيه متابعة أو خطة أسبوعية؟</summary>
-          <div class="acc-body">
-            الخطة تطلع لك بنظام “وش تسوي ومتى” حسب تاريخ اختبارك—وتقدر ترجع تعيد تحديد المستوى إذا تغيّر موعدك.
-          </div>
+          <summary>هل الخطة مناسبة للمبتدئ؟</summary>
+          <div class="acc-body">نعم، لأن الخطة تُبنى على مستواك الفعلي ومدة الاستعداد المتاحة لديك.</div>
         </details>
-
         <details>
-          <summary>هل المحتوى مناسب للمبتدئ؟</summary>
-          <div class="acc-body">
-            نعم، لأننا ما نفترض مستواك. الاختبار يحدد مكانك ويعطيك ترتيب واضح. المبتدئ بياخذ طريق مختلف عن المتقدم.
-          </div>
+          <summary>هل أقدر أطلب استرجاع؟</summary>
+          <div class="acc-body">حسب سياسة الاسترجاع الموضحة في صفحتها، ويمكنك إرسال طلب عبر صفحة الدعم.</div>
         </details>
-
         <details>
-          <summary>هل أقدر أسترجع قبل الانضمام؟</summary>
-          <div class="acc-body">
-            تقدر تقدم طلب استرجاع قبل التفعيل/الانضمام بحسب سياسة الاسترجاع. ادخل صفحة السياسات أو الدعم.
-          </div>
-        </details>
-
-        <details>
-          <summary>هل بياناتي آمنة؟</summary>
-          <div class="acc-body">
-            ما نطلب منك بيانات حساسة غير الضروري للتسجيل. راجع صفحة الخصوصية للتفاصيل.
-          </div>
+          <summary>هل بياناتي محفوظة؟</summary>
+          <div class="acc-body">نلتزم بحماية بياناتك ونعتمد على الحد الأدنى اللازم للتواصل والتفعيل.</div>
         </details>
       </div>
 
@@ -137,13 +112,49 @@
         <div class="footer-title">التواصل</div>
         <div class="footer-links">
           <a href="https://t.me/Academy_Ayed_2026" target="_blank" rel="noopener">قروب التنبيهات الرسمي</a>
-          <a href="https://t.me/ayedacadmeybot" target="_blank" rel="noopener">بوت المحتوى المجاني</a>
-          <a href="https://t.me/Ayed_Academy_2026" target="_blank" rel="noopener">حساب الأكاديمية (تلجرام)</a>
+          <a href="https://t.me/ayedacadmeybot" target="_blank" rel="noopener">بوت المحتوى</a>
+          <a href="https://t.me/Ayed_Academy_2026" target="_blank" rel="noopener">حساب الأكاديمية</a>
         </div>
       </div>
     </div>
     <div class="wrap footer-bottom">© 2026 أكاديمية عايد — جميع الحقوق محفوظة.</div>
   </footer>
+
+  <div id="toasts" class="toast-wrap" aria-live="polite"></div>
+  <button class="assistant-fab" id="assistantBtn" aria-label="مساعد التسجيل">💬</button>
+  <div class="assistant-panel" id="assistantPanel">
+    <div class="assistant-card" role="dialog" aria-modal="true">
+      <div class="assistant-head">
+        <div>
+          <div class="assistant-title">مساعد التسجيل</div>
+          <div class="assistant-sub">نظرة سريعة على أهم الخطوات.</div>
+        </div>
+        <button class="assistant-close" data-close-assistant>إغلاق</button>
+      </div>
+      <div class="assistant-body">
+        <div class="assistant-message" id="assistantMessage">كيف نقدر نخدمك؟</div>
+        <div class="assistant-group">
+          <div class="assistant-label">تنقل سريع</div>
+          <div class="assistant-actions">
+            <button class="chip" data-jump="level-test.html">اختبار المستوى</button>
+            <button class="chip" data-jump="register.html">التسجيل</button>
+            <button class="chip" data-jump="support.html">الدعم</button>
+          </div>
+        </div>
+        <div class="assistant-group">
+          <div class="assistant-label">أسئلة سريعة</div>
+          <div class="assistant-actions">
+            <button class="chip" data-answer="السعر يظهر بعد اكتمال الاختبار مباشرة.">متى يظهر السعر؟</button>
+            <button class="chip" data-answer="التفعيل يتم بعد مراجعة الإيصال المرسل عبر صفحة التسجيل.">كيف يتم التفعيل؟</button>
+          </div>
+        </div>
+      </div>
+      <div class="assistant-footer">
+        <button class="btn btn-gold" data-jump="level-test.html">ابدأ اختبار تحديد المستوى</button>
+        <a class="btn assistant-register disabled" aria-disabled="true" href="register.html">التسجيل</a>
+      </div>
+    </div>
+  </div>
 
   <script src="site-data.js"></script>
   <script src="app.js"></script>
