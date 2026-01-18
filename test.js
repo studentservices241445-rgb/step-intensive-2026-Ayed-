@@ -59,6 +59,7 @@
   }
 
   function h(str){
+    if(str === undefined || str === null) return '';
     return String(str).replace(/[&<>"']/g, s=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[s]));
   }
 
@@ -446,8 +447,8 @@
 
     const wrongList = s.wrong.slice(0, 10).map((w, idx)=>{
       const q = w.q;
-      const chosenTxt = (w.chosen===undefined || w.chosen===null) ? '—' : q.options[w.chosen];
-      const correctTxt = q.options[q.answer];
+      const chosenTxt = (w.chosen===undefined || w.chosen===null) ? '—' : (q.options?.[w.chosen] ?? '—');
+      const correctTxt = q.options?.[q.answer] ?? '—';
       const shared = q.passage ? `<details class="details"><summary>Passage</summary><div class="muted" style="white-space:pre-wrap">${h(q.passage)}</div></details>`
                    : q.dialog ? `<details class="details"><summary>Dialogue</summary><div class="muted" style="white-space:pre-wrap">${h(q.dialog)}</div></details>`
                    : '';
