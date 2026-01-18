@@ -8,7 +8,16 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="top-ticker" data-ticker></div>
+  <div class="top-ticker">
+    <div class="wrap ticker-inner">
+      <div class="ticker-badge">تحديثات</div>
+      <div class="ticker-text" data-ticker></div>
+      <div class="ticker-actions">
+        <a class="mini-link" href="level-test.html">اختبار المستوى</a>
+        <a class="mini-link" href="register.html">التسجيل</a>
+      </div>
+    </div>
+  </div>
 
   <header class="site-header">
     <div class="wrap header-inner">
@@ -20,16 +29,16 @@
         </div>
       </a>
 
-      <button class="nav-toggle" aria-label="فتح القائمة" data-nav-toggle>≡</button>
+      <button class="nav-toggle" aria-label="فتح القائمة" data-nav-toggle>☰</button>
 
       <nav class="nav" data-nav>
-        <a href="index.html">الرئيسية</a>
-        <a href="course-content.html" class="active">محتوى الدورة</a>
-        <a href="level-test.html">اختبار تحديد المستوى</a>
-        <a href="testimonials.html">آراء الطلاب</a>
-        <a href="faq.html">الأسئلة الشائعة</a>
-        <a href="support.html">الدعم</a>
-        <a href="register.html" class="btn btn-gold">التسجيل / تأكيد الدفع</a>
+        <a href="index.html" data-page="index.html">الرئيسية</a>
+        <a href="course-content.html" data-page="course-content.html">محتوى الدورة</a>
+        <a href="level-test.html" data-page="level-test.html">اختبار تحديد المستوى</a>
+        <a href="testimonials.html" data-page="testimonials.html">آراء الطلاب</a>
+        <a href="faq.html" data-page="faq.html">الأسئلة الشائعة</a>
+        <a href="support.html" data-page="support.html">الدعم</a>
+        <a href="register.html" data-page="register.html" class="btn btn-gold">التسجيل / تأكيد الدفع</a>
       </nav>
     </div>
   </header>
@@ -37,14 +46,14 @@
   <main>
     <section class="wrap section">
       <h1>الدعم والشكاوى</h1>
-      <p class="muted">لأن الموقع ثابت (Static)، ما يرسل بيانات تلقائيًا. هنا بنجهّز لك رسالة مرتبة (نسخ + فتح التليجرام) عشان تختصر وقتك.</p>
+      <p class="muted">اكتب تفاصيل طلبك لنجهّز لك رسالة جاهزة تضمن وصول كل المعلومات بسرعة.</p>
 
       <div class="grid-2">
         <div class="card">
           <h3>جهّز رسالتك</h3>
-          <form id="supportForm" class="form">
-            <label class="field">
-              <span>نوع الطلب</span>
+          <form id="supportForm" class="form-grid">
+            <div class="field">
+              <label for="sType">نوع الطلب</label>
               <select id="sType" required>
                 <option value="استفسار">استفسار</option>
                 <option value="تأخر تفعيل">تأخر تفعيل</option>
@@ -52,29 +61,29 @@
                 <option value="طلب استرجاع">طلب استرجاع</option>
                 <option value="شكوى/اقتراح">شكوى / اقتراح</option>
               </select>
-            </label>
-
-            <div class="grid-2">
-              <label class="field">
-                <span>الاسم</span>
-                <input id="sName" type="text" placeholder="اسمك الثلاثي" required />
-              </label>
-              <label class="field">
-                <span>وسيلة التواصل</span>
-                <input id="sContact" type="text" placeholder="Telegram / WhatsApp" required />
-              </label>
             </div>
 
-            <label class="field">
-              <span>تفاصيل مختصرة</span>
-              <textarea id="sDetails" rows="5" placeholder="اكتب المشكلة أو الطلب بالتفصيل..." required></textarea>
-            </label>
+            <div class="cols-2">
+              <div class="field">
+                <label for="sName">الاسم</label>
+                <input id="sName" type="text" placeholder="اسمك الثلاثي" required />
+              </div>
+              <div class="field">
+                <label for="sContact">وسيلة التواصل</label>
+                <input id="sContact" type="text" placeholder="Telegram أو WhatsApp" required />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="sDetails">تفاصيل الطلب</label>
+              <textarea id="sDetails" rows="5" placeholder="اكتب المشكلة أو الطلب بالتفصيل" required></textarea>
+            </div>
 
             <div class="cta-row">
               <button class="btn btn-gold" type="submit">فتح التليجرام + نسخ الرسالة</button>
               <a class="btn btn-ghost" href="register.html">الرجوع لصفحة التسجيل</a>
             </div>
-            <p class="muted" style="margin-top:10px">نصيحة: إذا عندك إيصال/صورة، أرسلها في نفس المحادثة بعد ما تنفتح.</p>
+            <p class="muted" style="margin-top:10px">إذا عندك إيصال أو صورة داعمة، أرسلها في نفس المحادثة.</p>
           </form>
         </div>
 
@@ -82,14 +91,101 @@
           <h3>أوقات الرد</h3>
           <ul class="checklist">
             <li>الرد عادة خلال 24 ساعة عمل.</li>
-            <li>في أوقات الضغط ممكن يصير تأخير بسيط، ونعوّض بتحديثات للمقاعد حسب المتاح.</li>
-            <li>أي طلب استرجاع يخضع لسياسة الاسترجاع (موجودة بصفحتها).</li>
+            <li>في أوقات الضغط قد يتأخر الرد قليلًا.</li>
+            <li>طلبات الاسترجاع تخضع لسياسة الاسترجاع.</li>
           </ul>
 
           <div class="hint" style="margin-top:14px">
-            تبي تختصر الموضوع؟ جهّز رقم جوالك + اسم المحول + التاريخ + المبلغ + لقطة من الإيصال.
+            جهّز رقم جوالك + اسم المحول + التاريخ + المبلغ لتسريع المعالجة.
           </div>
         </div>
       </div>
     </section>
   </main>
+
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div>
+        <div class="footer-title">أكاديمية عايد</div>
+        <p class="muted">موقع رسمي للتسجيل في دورة STEP المكثفة 2026.</p>
+      </div>
+      <div>
+        <div class="footer-title">روابط مهمة</div>
+        <div class="footer-links">
+          <a href="privacy.html">سياسة الخصوصية</a>
+          <a href="refund.html">سياسة الاسترجاع</a>
+          <a href="terms.html">الشروط والأحكام</a>
+          <a href="support.html">الدعم والشكاوى</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-title">التواصل</div>
+        <div class="footer-links">
+          <a href="https://t.me/Academy_Ayed_2026" target="_blank" rel="noopener">قروب التنبيهات الرسمي</a>
+          <a href="https://t.me/ayedacadmeybot" target="_blank" rel="noopener">بوت المحتوى</a>
+          <a href="https://t.me/Ayed_Academy_2026" target="_blank" rel="noopener">حساب الأكاديمية</a>
+        </div>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">© 2026 أكاديمية عايد — جميع الحقوق محفوظة.</div>
+  </footer>
+
+  <div id="toasts" class="toast-wrap" aria-live="polite"></div>
+  <button class="assistant-fab" id="assistantBtn" aria-label="مساعد التسجيل">💬</button>
+  <div class="assistant-panel" id="assistantPanel">
+    <div class="assistant-card" role="dialog" aria-modal="true">
+      <div class="assistant-head">
+        <div>
+          <div class="assistant-title">مساعد التسجيل</div>
+          <div class="assistant-sub">نساعدك بترتيب الطلب.</div>
+        </div>
+        <button class="assistant-close" data-close-assistant>إغلاق</button>
+      </div>
+      <div class="assistant-body">
+        <div class="assistant-message" id="assistantMessage">أرسل لنا التفاصيل وسنساعدك بأسرع وقت.</div>
+        <div class="assistant-group">
+          <div class="assistant-label">تنقل سريع</div>
+          <div class="assistant-actions">
+            <button class="chip" data-jump="faq.html">الأسئلة الشائعة</button>
+            <button class="chip" data-jump="register.html">التسجيل</button>
+          </div>
+        </div>
+      </div>
+      <div class="assistant-footer">
+        <button class="btn btn-gold" data-jump="level-test.html">ابدأ اختبار تحديد المستوى</button>
+        <a class="btn assistant-register disabled" aria-disabled="true" href="register.html">التسجيل</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="site-data.js"></script>
+  <script src="app.js"></script>
+  <script>
+    (function () {
+      const form = document.getElementById('supportForm');
+      if (!form) return;
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const type = document.getElementById('sType')?.value || '';
+        const name = document.getElementById('sName')?.value || '';
+        const contact = document.getElementById('sContact')?.value || '';
+        const details = document.getElementById('sDetails')?.value || '';
+        const message = [
+          'السلام عليكم ورحمة الله وبركاته',
+          '',
+          `نوع الطلب: ${type}`,
+          `الاسم: ${name}`,
+          `وسيلة التواصل: ${contact}`,
+          `التفاصيل: ${details}`
+        ].join('\n');
+
+        const encoded = encodeURIComponent(message);
+        const link = `https://t.me/Ayed_Academy_2026?text=${encoded}`;
+        navigator.clipboard?.writeText(message).catch(() => {});
+        window.open(link, '_blank', 'noopener');
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -8,7 +8,16 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="top-ticker" data-ticker></div>
+  <div class="top-ticker">
+    <div class="wrap ticker-inner">
+      <div class="ticker-badge">تحديثات</div>
+      <div class="ticker-text" data-ticker></div>
+      <div class="ticker-actions">
+        <a class="mini-link" href="level-test.html">اختبار المستوى</a>
+        <a class="mini-link" href="register.html">التسجيل</a>
+      </div>
+    </div>
+  </div>
 
   <header class="site-header">
     <div class="wrap header-inner">
@@ -20,16 +29,15 @@
         </div>
       </a>
 
-      <button class="nav-toggle" aria-label="فتح القائمة" data-nav-toggle>≡</button>
+      <button class="nav-toggle" aria-label="فتح القائمة" data-nav-toggle>☰</button>
 
       <nav class="nav" data-nav>
-        <a href="index.html">الرئيسية</a>
-        <a href="course-content.html" class="active">محتوى الدورة</a>
-        <a href="level-test.html">اختبار تحديد المستوى</a>
-        <a href="testimonials.html">آراء الطلاب</a>
-        <a href="faq.html">الأسئلة الشائعة</a>
-        <a href="support.html">الدعم</a>
-        <a href="register.html" class="btn btn-gold">التسجيل / تأكيد الدفع</a>
+        <a href="index.html" data-page="index.html">الرئيسية</a>
+        <a href="course-content.html" data-page="course-content.html">محتوى الدورة</a>
+        <a href="level-test.html" data-page="level-test.html">اختبار تحديد المستوى</a>
+        <a href="testimonials.html" data-page="testimonials.html">آراء الطلاب</a>
+        <a href="faq.html" data-page="faq.html">الأسئلة الشائعة</a>
+        <a href="register.html" data-page="register.html" class="btn btn-gold">التسجيل / تأكيد الدفع</a>
       </nav>
     </div>
   </header>
@@ -38,15 +46,15 @@
     <section class="wrap section">
       <h1>سياسة الخصوصية</h1>
       <div class="card">
-        <p>نحترم خصوصيتك... هنا ملخص واضح ومختصر:</p>
+        <p>نحترم خصوصيتك ونسعى لتقديم تجربة واضحة وآمنة:</p>
         <ul class="checklist">
-          <li><strong>البيانات اللي نجمعها:</strong> بيانات تدخلها بنفسك (اسم، وسيلة التواصل، موعد الاختبار...) عشان نجهز لك الخطة.</li>
-          <li><strong>الإيصال:</strong> الموقع ثابت وما يرفع الملفات لسيرفر، لكن نطلب منك ترفق الإيصال محليًا للتأكيد قبل إرسال رسالة التواصل.</li>
-          <li><strong>الكوكيز/التخزين:</strong> نستخدم تخزين المتصفح (localStorage) فقط لحفظ نتيجة اختبار المستوى على جهازك.</li>
-          <li><strong>مشاركة البيانات:</strong> ما نبيع بياناتك ولا نشاركها مع طرف ثالث. التواصل يتم فقط إذا أنت بادرت برسالة للمنسق.</li>
-          <li><strong>تعديل/حذف:</strong> تقدر تمسح بيانات نتيجة الاختبار من إعدادات المتصفح أو بإعادة ضبط الموقع من جهازك.</li>
+          <li><strong>البيانات التي نجمعها:</strong> المعلومات التي تدخلها بنفسك لأغراض الاختبار والتواصل.</li>
+          <li><strong>استخدام البيانات:</strong> نستخدم بياناتك فقط لخدمتك وتسهيل التفعيل والمتابعة.</li>
+          <li><strong>مشاركة البيانات:</strong> لا نشارك بياناتك مع أي طرف ثالث خارج إطار الخدمة.</li>
+          <li><strong>تعديل البيانات:</strong> يمكنك تحديث بياناتك عبر التواصل معنا من صفحة الدعم.</li>
+          <li><strong>الأمان:</strong> نلتزم بأفضل الممارسات للحفاظ على سرية معلوماتك.</li>
         </ul>
-        <p class="muted">أي تحديثات على السياسة يتم إعلانها في التنبيهات داخل الموقع.</p>
+        <p class="muted">أي تحديثات على السياسة يتم الإعلان عنها داخل الموقع.</p>
       </div>
     </section>
   </main>
@@ -70,44 +78,41 @@
         <div class="footer-title">التواصل</div>
         <div class="footer-links">
           <a href="https://t.me/Academy_Ayed_2026" target="_blank" rel="noopener">قروب التنبيهات الرسمي</a>
-          <a href="https://t.me/ayedacadmeybot" target="_blank" rel="noopener">بوت المحتوى المجاني</a>
-          <a href="https://t.me/Ayed_Academy_2026" target="_blank" rel="noopener">حساب الأكاديمية (تلجرام)</a>
+          <a href="https://t.me/ayedacadmeybot" target="_blank" rel="noopener">بوت المحتوى</a>
+          <a href="https://t.me/Ayed_Academy_2026" target="_blank" rel="noopener">حساب الأكاديمية</a>
         </div>
       </div>
     </div>
     <div class="wrap footer-bottom">© 2026 أكاديمية عايد — جميع الحقوق محفوظة.</div>
   </footer>
 
-  <script src="site-data.js"></script>
-  <script src="app.js"></script>
-</body>
-</html>
-  <footer class="footer">
-    <div class="wrap footer-grid">
-      <div>
-        <div class="footer-title">أكاديمية عايد</div>
-        <p class="muted">موقع رسمي للتسجيل في دورة STEP المكثفة 2026.</p>
+  <div id="toasts" class="toast-wrap" aria-live="polite"></div>
+  <button class="assistant-fab" id="assistantBtn" aria-label="مساعد التسجيل">💬</button>
+  <div class="assistant-panel" id="assistantPanel">
+    <div class="assistant-card" role="dialog" aria-modal="true">
+      <div class="assistant-head">
+        <div>
+          <div class="assistant-title">مساعد التسجيل</div>
+          <div class="assistant-sub">أسئلة الخصوصية؟ نحن هنا.</div>
+        </div>
+        <button class="assistant-close" data-close-assistant>إغلاق</button>
       </div>
-      <div>
-        <div class="footer-title">روابط مهمة</div>
-        <div class="footer-links">
-          <a href="privacy.html">سياسة الخصوصية</a>
-          <a href="refund.html">سياسة الاسترجاع</a>
-          <a href="terms.html">الشروط والأحكام</a>
-          <a href="support.html">الدعم والشكاوى</a>
+      <div class="assistant-body">
+        <div class="assistant-message" id="assistantMessage">خصوصيتك أولوية لدينا. يمكنك التواصل معنا لأي استفسار.</div>
+        <div class="assistant-group">
+          <div class="assistant-label">تنقل سريع</div>
+          <div class="assistant-actions">
+            <button class="chip" data-jump="support.html">الدعم</button>
+            <button class="chip" data-jump="faq.html">الأسئلة الشائعة</button>
+          </div>
         </div>
       </div>
-      <div>
-        <div class="footer-title">التواصل</div>
-        <div class="footer-links">
-          <a href="https://t.me/Academy_Ayed_2026" target="_blank" rel="noopener">قروب التنبيهات الرسمي</a>
-          <a href="https://t.me/ayedacadmeybot" target="_blank" rel="noopener">بوت المحتوى المجاني</a>
-          <a href="https://t.me/Ayed_Academy_2026" target="_blank" rel="noopener">حساب الأكاديمية (تلجرام)</a>
-        </div>
+      <div class="assistant-footer">
+        <button class="btn btn-gold" data-jump="level-test.html">ابدأ اختبار تحديد المستوى</button>
+        <a class="btn assistant-register disabled" aria-disabled="true" href="register.html">التسجيل</a>
       </div>
     </div>
-    <div class="wrap footer-bottom">© 2026 أكاديمية عايد — جميع الحقوق محفوظة.</div>
-  </footer>
+  </div>
 
   <script src="site-data.js"></script>
   <script src="app.js"></script>
