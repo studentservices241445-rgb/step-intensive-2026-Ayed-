@@ -537,6 +537,6 @@
     `;
   }
 
-  mount.innerHTML = render();
+  render();
 
 })();
