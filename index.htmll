@@ -1,175 +1,0 @@
-<!doctype html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="الموقع الرسمي لدورة STEP المكثفة 2026: اختبار تحديد مستوى + خطة مذاكرة مخصصة + محتوى محدث على نمط قياس." />
-  <meta name="theme-color" content="#0b0f14" />
-  <title>أكاديمية عايد | STEP المكثفة 2026</title>
-  <link rel="stylesheet" href="assets/styles.css" />
-</head>
-<body>
-
-<div class="top-ticker" id="ticker"><span class="tickerText">جاري تحميل آخر التحديثات…</span></div>
-
-<header class="site-header">
-  <div class="wrap header-inner">
-    <a class="brand" href="index.html">
-      <div>
-        <div class="brand-title">أكاديمية عايد</div>
-        <div class="brand-sub">STEP | الدورة المكثفة 2026</div>
-      </div>
-    </a>
-
-    <button class="nav-toggle" aria-label="فتح القائمة" data-nav-toggle>≡</button>
-
-    <nav class="nav" data-nav>
-      <a href="index.html" class="active">الرئيسية</a>
-      <a href="course.html">محتوى الدورة</a>
-      <a href="level-test.html">اختبار تحديد المستوى</a>
-      <a href="testimonials.html">آراء الطلاب</a>
-      <a href="faq.html">الأسئلة الشائعة</a>
-      <a href="register.html" class="btn btn-gold">التسجيل</a>
-    </nav>
-  </div>
-</header>
-
-<main>
-  <section class="hero watermark">
-    <div class="wrap hero-grid">
-      <div>
-        <div class="pill">متوافق مع تحديثات قياس 2026 ✅</div>
-        <h1>خلّ خطتك واضحة… قبل لا تدفع ريال واحد.</h1>
-        <p class="lead">
-          أول خطوة عندنا <strong>اختبار تحديد المستوى</strong> — يعطيك تحليل نقاط ضعفك + خطة مذاكرة مناسبة لوقتك.
-          <strong>السعر ما يطلع إلا بعد الاختبار</strong> (عشان تدخل وأنت فاهم وش تحتاج بالضبط).
-        </p>
-
-        <div class="cta-row">
-          <a href="level-test.html" class="btn btn-gold">ابدأ اختبار تحديد المستوى</a>
-          <a href="course.html" class="btn btn-ghost">شف محتوى الدورة</a>
-        </div>
-
-        <div class="mini-grid">
-          <div class="mini-card">
-            <div class="mini-title">العدّاد</div>
-            <div class="mini-value" data-countdown>—</div>
-            <div class="mini-note">آخر موعد للدفعة الحالية: 29/01/2026</div>
-          </div>
-
-          <div class="mini-card">
-            <div class="mini-title">المقاعد المتبقية</div>
-            <div class="mini-value"><span data-seats>—</span> مقعد</div>
-            <div class="mini-note">التسجيل يوقف عند اكتمال العدد</div>
-          </div>
-        </div>
-
-        <div class="hint">
-          ملاحظة: الموقع للتسجيل وتوجيه الخطة فقط — التأكيد النهائي يتم عبر الحساب الرسمي 👇
-          <div class="muted">@Ayed_Academy_2026</div>
-        </div>
-      </div>
-
-      <div class="hero-card">
-        <h2>وش اللي يميز الدورة المكثفة؟</h2>
-        <ul class="checklist">
-          <li><strong>خطة مخصصة</strong> حسب وقت اختبارك ومستواك.</li>
-          <li>تركيز على أنماط أسئلة قياس 2026 + نماذج حديثة.</li>
-          <li>تقسيم واضح: Grammar / Reading / Listening + استثناءات.</li>
-          <li>طريقة مذاكرة عملية بدون تشتيت مصادر.</li>
-        </ul>
-
-        <div class="card-actions">
-          <a href="level-test.html" class="btn btn-gold">خذ خطتك الآن</a>
-          <a href="register.html" class="btn btn-ghost">جاهز للتسجيل؟</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="wrap section">
-    <h2>الطريقة المختصرة (بدون لف ودوران)</h2>
-    <div class="steps">
-      <div class="step">
-        <div class="step-no">1</div>
-        <div>
-          <h3>اختبر مستواك</h3>
-          <p>أسئلة تشخيصية + تحليل تلقائي لنقاط الضعف.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-no">2</div>
-        <div>
-          <h3>استلم خطة مذاكرة</h3>
-          <p>خطة حسب وقتك + ترتيب الأولويات لكل قسم.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-no">3</div>
-        <div>
-          <h3>يطلع لك السعر</h3>
-          <p>السعر الخاص <strong>349</strong> يظهر بعد الخطة. بعد اكتمال المقاعد يرجع السعر الرسمي <strong>599</strong>.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-no">4</div>
-        <div>
-          <h3>تأكيد الدفع + التسجيل</h3>
-          <p>ترفع الإيصال بالموقع (إجباري) وبعدها تفتح لك رسالة جاهزة للحساب الرسمي للتأكيد النهائي.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="wrap section split">
-    <div>
-      <h2>لمحة من آراء الطلاب</h2>
-      <p class="muted">الآراء هنا للعرض — وتقدر تعدلها بأسماء حقيقية بإذن أصحابها.</p>
-      <a href="testimonials.html" class="btn btn-ghost">عرض الكل</a>
-    </div>
-    <div class="quote-grid" id="quotesPreview"></div>
-  </section>
-
-  <section class="wrap section">
-    <h2>أسئلة شائعة بسرعة</h2>
-    <div class="faq-mini" id="faqPreview"></div>
-    <div style="margin-top:14px">
-      <a href="faq.html" class="btn btn-ghost">عرض كل الأسئلة الشائعة</a>
-      <a href="level-test.html" class="btn btn-gold">ابدأ اختبار تحديد المستوى</a>
-    </div>
-  </section>
-</main>
-
-<footer class="site-footer">
-  <div class="wrap footer-grid">
-    <div>
-      <div class="footer-title">روابط مهمة</div>
-      <a href="privacy.html">سياسة الخصوصية</a>
-      <a href="refund.html">سياسة الاسترجاع</a>
-      <a href="terms.html">الشروط والتعهد</a>
-      <a href="support.html">الدعم والشكاوى</a>
-    </div>
-
-    <div>
-      <div class="footer-title">التواصل الرسمي</div>
-      <div class="muted">📩 @Ayed_Academy_2026</div>
-      <div class="muted">🚨 قروب التنبيهات: https://t.me/Academy_Ayed_2026</div>
-      <div class="muted">🤖 بوت مجاني: https://t.me/ayedacadmeybot</div>
-    </div>
-
-    <div>
-      <div class="footer-title">تنبيه</div>
-      <div class="muted">
-        التأكيد يتم بأقرب وقت بعد وصول التحويل. كثرة الرسائل ممكن تأخر الرد، فخل رسالتك وحدة وواضحة 🙏
-      </div>
-    </div>
-  </div>
-
-  <div class="wrap small">© 2026 أكاديمية عايد — جميع الحقوق محفوظة.</div>
-</footer>
-
-<script src="data/site-data.js"></script>
-<script src="js/app.js"></script>
-
-</body>
-</html>
