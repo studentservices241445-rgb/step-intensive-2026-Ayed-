@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 192 192" role="img" aria-label="أكاديمية عايد">
+  <defs>
+    <linearGradient id="gold" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#f7c948" stop-opacity="0.95" />
+      <stop offset="1" stop-color="#d4a72c" stop-opacity="0.9" />
+    </linearGradient>
+  </defs>
+  <rect width="192" height="192" rx="40" fill="#ffffff" />
+  <rect x="16" y="16" width="160" height="160" rx="36" fill="url(#gold)" opacity="0.18" />
+  <circle cx="96" cy="96" r="56" fill="#ffffff" />
+  <circle cx="96" cy="96" r="56" fill="url(#gold)" opacity="0.25" />
+  <text x="96" y="112" font-size="72" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-weight="700" fill="#7a5700">ع</text>
+</svg>

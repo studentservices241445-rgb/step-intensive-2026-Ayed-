@@ -1,6 +1,8 @@
 /* Level test + personalized study plan + price reveal */
 
 (async function(){
+  const qs = (s, el=document) => el.querySelector(s);
+  const qsa = (s, el=document) => Array.from(el.querySelectorAll(s));
   const mount = document.getElementById('testApp');
   if(!mount) return;
 
@@ -175,8 +177,8 @@
               <div class="muted">عشان ما ندخلك محتوى كبير وانت ما تدري من وين تبدأ. الخطة بتقول لك: وش تذاكر بالضبط، وش تترك، وكيف تراجع الأخطاء.</div>
             </div>
 
-            <button id="startBtn" class="btn primary">ابدأ الاختبار</button>
-            <a class="btn" href="course-content.html">شوف محتوى الدورة</a>
+            <button id="startBtn" class="btn btn-gold">ابدأ الاختبار</button>
+            <a class="btn btn-ghost" href="course-content.html">شوف محتوى الدورة</a>
             <div class="hr"></div>
             <div class="mini">
               <div><span class="badge">مهم</span> السعر يظهر بعد النتيجة.</div>
@@ -272,7 +274,7 @@
               </div>
             </div>
             <div style="text-align:left">
-              <button id="submitBtn" class="btn primary">اعرض نتيجتي وخطتي</button>
+              <button id="submitBtn" class="btn btn-gold">اعرض نتيجتي وخطتي</button>
               <button id="backBtn" class="btn">رجوع للمعلومات</button>
             </div>
           </div>
@@ -283,7 +285,7 @@
 
         <div class="spacer"></div>
         <div class="card">
-          <button id="submitBtn2" class="btn primary">اعرض نتيجتي وخطتي</button>
+          <button id="submitBtn2" class="btn btn-gold">اعرض نتيجتي وخطتي</button>
           <button id="backBtn2" class="btn">رجوع للمعلومات</button>
           <p class="muted" style="margin-top:12px">ملاحظة: النتيجة للتشخيص. الهدف إنك تعرف وش تركز عليه بالضبط.</p>
         </div>
@@ -510,8 +512,8 @@
             </div>
 
             <div class="hr"></div>
-            <a class="btn primary" href="register.html">أكمل التسجيل وتأكيد الدفع</a>
-            <a class="btn" href="course-content.html">شوف محتوى الدورة بالتفصيل</a>
+            <a class="btn btn-gold" href="register.html">أكمل التسجيل وتأكيد الدفع</a>
+            <a class="btn btn-ghost" href="course-content.html">شوف محتوى الدورة بالتفصيل</a>
           </div>
         </div>
 
