@@ -3,8 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f7c948" />
   <title>آراء الطلاب | STEP المكثفة 2026</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="assets/icon-192.svg" />
 </head>
 <body>
   <div class="top-ticker" data-ticker></div>
@@ -12,6 +15,7 @@
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">ع</span>
         <div>
           <div class="brand-title">أكاديمية عايد الرسمية</div>
           <div class="brand-sub">STEP | الدورة المكثفة 2026</div>
@@ -22,9 +26,9 @@
 
       <nav class="nav" data-nav>
         <a href="index.html">الرئيسية</a>
-        <a href="course-content.html" class="active">محتوى الدورة</a>
+        <a href="course-content.html">محتوى الدورة</a>
         <a href="level-test.html">اختبار تحديد المستوى</a>
-        <a href="testimonials.html">آراء الطلاب</a>
+        <a href="testimonials.html" class="active">آراء الطلاب</a>
         <a href="faq.html">الأسئلة الشائعة</a>
         <a href="support.html">الدعم</a>
         <a href="register.html" class="btn btn-gold">التسجيل / تأكيد الدفع</a>
@@ -36,6 +40,37 @@
     <section class="wrap section">
       <h1>لمحة من آراء الطلاب</h1>
       <p class="muted">ملاحظة: هذي أمثلة جاهزة للعرض داخل الموقع. إذا عندك آراء طلابك الحقيقية، استبدل الأسماء والنصوص بكل بساطة.</p>
+
+      <div class="card" style="margin:18px 0">
+        <div class="section-head">
+          <h2>قوالب جاهزة لآراء الطلاب</h2>
+          <span class="muted">انسخ القالب وعدّل الاسم والنتيجة بسرعة.</span>
+        </div>
+        <div class="testimonials" style="margin-top:12px">
+          <article class="t-card template">
+            <div class="t-top">
+              <div class="avatar">ق</div>
+              <div>
+                <div class="t-name">[الاسم]</div>
+                <div class="t-meta">[المدينة] • خطة [7/14/30] يوم</div>
+              </div>
+              <span class="t-tag">قالب سريع</span>
+            </div>
+            <p>كنت متشتت/ة بين مصادر كثيرة، وبعد الاختبار صارت الخطة واضحة… درجتي ارتفعت من [درجة] إلى [درجة] خلال [مدة].</p>
+          </article>
+          <article class="t-card template">
+            <div class="t-top">
+              <div class="avatar">ق</div>
+              <div>
+                <div class="t-name">[الاسم]</div>
+                <div class="t-meta">[المدينة] • قسم التركيز: [Grammar/Reading/Listening]</div>
+              </div>
+              <span class="t-tag">قالب سريع</span>
+            </div>
+            <p>الخطة رتبت وقتي وخلتني أعرف وش أراجع بالضبط. أكثر شيء فرق معي [نقطة قوة] + مراجعة الأخطاء يوميًا.</p>
+          </article>
+        </div>
+      </div>
 
       <div class="grid-2">
         <article class="card">
@@ -113,6 +148,7 @@
     </div>
     <div class="wrap footer-bottom">© 2026 أكاديمية عايد — جميع الحقوق محفوظة.</div>
   </footer>
+  <div id="toasts" class="toast-wrap" aria-live="polite" aria-atomic="true"></div>
   <script src="site-data.js"></script>
   <script src="app.js"></script>
 </body>
