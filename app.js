@@ -241,4 +241,17 @@ document.addEventListener('DOMContentLoaded', () => {
   initToasts();
   initAssistant();
   guardRegistration();
+  // Register service worker and prompt PWA install
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js').catch(() => {});
+  });
+}
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  // Immediately show the install prompt
+  e.prompt();
+});
+
 });
