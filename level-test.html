@@ -1,116 +1,0 @@
-<!doctype html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="اختبار تحديد مستوى يساعدك تعرف نقاط ضعفك ويطلع لك خطة مذاكرة مناسبة." />
-  <meta name="theme-color" content="#0b0f14" />
-  <title>اختبار تحديد المستوى | دورة عايد المكثفة 2026</title>
-  <link rel="icon" href="logo.png" />
-  <link rel="stylesheet" href="styles.css" />
-      <link rel="manifest" href="manifest.json" />
-</head>
-<body>
-  <div class="top-ticker">
-    <div class="wrap ticker-inner">
-      <div class="ticker-badge">تحديثات</div>
-      <div class="ticker-text" data-ticker></div>
-      <div class="ticker-actions">
-        <a class="mini-link" href="index.html">الرئيسية</a>
-        <a class="mini-link" href="register.html">التسجيل</a>
-      </div>
-    </div>
-  </div>
-
-  <header class="site-header">
-    <div class="wrap header-inner">
-      <a class="brand" href="index.html">
-        <img src="logo.png" alt="شعار أكاديمية عايد" />
-        <div>
-          <div class="brand-title">أكاديمية عايد</div>
-          <div class="brand-sub">STEP | المكثفة 2026</div>
-        </div>
-      </a>
-
-      <button class="nav-toggle" aria-label="فتح القائمة" data-nav-toggle>☰</button>
-
-      <nav class="nav" data-nav>
-        <a href="index.html" data-page="index.html">الرئيسية</a>
-        <a href="course-content.html" data-page="course-content.html">محتوى الدورة</a>
-        <a href="level-test.html" data-page="level-test.html">اختبار تحديد المستوى</a>
-        <a href="testimonials.html" data-page="testimonials.html">آراء الطلاب</a>
-        <a href="faq.html" data-page="faq.html">الأسئلة الشائعة</a>
-        <a href="register.html" data-page="register.html" class="btn btn-gold">التسجيل / تأكيد الدفع</a>
-      </nav>
-    </div>
-  </header>
-<<man>>
-  <div id="testApp"></div>
-
-  </main>
-
-  <footer class="footer">
-    <div class="wrap footer-grid">
-      <div>
-        <div class="footer-title">أكاديمية عايد</div>
-        <p class="muted">نبدأ بالاختبار ثم نحدد لك الخطة المناسبة.</p>
-      </div>
-      <div>
-        <div class="footer-title">روابط مهمة</div>
-        <div class="footer-links">
-          <a href="privacy.html">سياسة الخصوصية</a>
-          <a href="refund.html">سياسة الاسترجاع</a>
-          <a href="terms.html">الشروط والأحكام</a>
-          <a href="support.html">الدعم والشكاوى</a>
-        </div>
-      </div>
-      <div>
-        <div class="footer-title">التواصل</div>
-        <div class="footer-links">
-          <a href="https://t.me/Ayed_Academy_2026" target="_blank" rel="noopener">حساب الأكاديمية</a>
-        </div>
-      </div>
-    </div>
-    <div class="wrap footer-bottom">© 2026 أكاديمية عايد — جميع الحقوق محفوظة.</div>
-  </footer>
-
-<<div> id="toasts" class="toast-wrap" aria-live="polite"></div>
-  <button class="assistant-fab" id="assistantBtn" aria-label="مساعد التسجيل">💬</button>
-  <div class="assistant-panel" id="assistantPanel">
-    <div class="assistant-card" role="dialog" aria-modal="true">
-      <div class="assistant-head">
-        <div>
-          <div class="assistant-title">مساعد الاختبار</div>
-          <div class="assistant-sub">سؤال واحد في كل مرة مع حفظ التقدم.</div>
-        </div>
-        <button class="assistant-close" data-close-assistant>إغلاق</button>
-      </div>
-      <div class="assistant-body">
-        <div class="assistant-message" id="assistantMessage">ابدأ الآن واستلم النتيجة والخطة فورًا بعد الانتهاء.</div>
-        <div class="assistant-group">
-          <div class="assistant-label">تنقل سريع</div>
-          <div class="assistant-actions">
-            <button class="chip" data-jump="index.html">الرئيسية</button>
-            <button class="chip" data-jump="course-content.html">محتوى الدورة</button>
-          </div>
-        </div>
-        <div class="assistant-group">
-          <div class="assistant-label">أسئلة سريعة</div>
-          <div class="assistant-actions">
-            <button class="chip" data-answer="الاختبار مختصر ويُعرض سؤالًا واحدًا في كل خطوة.">كيف يتم الاختبار؟</button>
-            <button class="chip" data-answer="تظهر النتيجة والخطة والسعر بعد آخر سؤال مباشرة.">متى تظهر النتيجة؟</button>
-          </div>
-        </div>
-      </div>
-      <div class="assistant-footer">
-        <button class="btn btn-gold" data-jump="level-test.html">ابدأ اختبار تحديد المستوى</button>
-        <a class="btn assistant-register disabled" aria-disabled="true" href="register.html">التسجيل</a>
-      </div>
-    </div>
-  </div>
-
-  <script src="site-data.js"></script>
-  <script src="app.js"></script>
-  <script src="test.js"></script>
-</body>
-</html>
