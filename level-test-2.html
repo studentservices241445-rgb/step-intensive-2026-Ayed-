@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="اختبار تحديد المستوى لدورة STEP المكثفة 2026 — 20 سؤال من بنك 150 سؤال، سؤال بعد سؤال." />
+  <meta name="theme-color" content="#070a0f" />
+  <title>اختبار تحديد المستوى — أكاديمية عايد الرسمية</title>
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+  <div class="ticker" aria-hidden="false">
+    <div class="container ticker__inner">
+      <span class="pill">LIVE</span>
+      <span class="line">اختبار 20 سؤال... وبعدها الخطة 👇</span>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="./index.html" aria-label="العودة للصفحة الرئيسية">
+        <svg class="logo" viewBox="0 0 64 64" role="img" aria-label="شعار أكاديمية عايد" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#f4e3a1"/>
+              <stop offset="0.45" stop-color="#d7b15a"/>
+              <stop offset="1" stop-color="#b88a2a"/>
+            </linearGradient>
+            <radialGradient id="glow" cx="50%" cy="35%" r="65%">
+              <stop offset="0" stop-color="#f4e3a1" stop-opacity="0.9"/>
+              <stop offset="1" stop-color="#d7b15a" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <circle cx="32" cy="32" r="30" fill="rgba(255,255,255,0.04)" stroke="rgba(215,177,90,0.35)"/>
+          <circle cx="32" cy="26" r="22" fill="url(#glow)" opacity="0.45"/>
+          <g class="g1" fill="none" stroke="url(#gold)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 40c7-16 21-18 28-3"/>
+            <path d="M22 44c5 4 10 6 16 6 7 0 12-2 17-6" opacity="0.8"/>
+            <path d="M26 22l6-6 6 6"/>
+            <path d="M32 16v20"/>
+          </g>
+        </svg>
+        <div class="brandText">
+          <div class="brandTitle">أكاديمية عايد الرسمية</div>
+          <div class="brandSub">اختبار تحديد المستوى</div>
+        </div>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" title="القائمة">
+        ☰ <span class="muted">القائمة</span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <a href="index.html">الرئيسية</a>
+        <a href="course-content.html">محتوى الدورة</a>
+        <a href="faq.html">الأسئلة الشائعة</a>
+        <a href="testimonials.html">قصص النجاح</a>
+        <a href="support.html">الدعم</a>
+        <a href="level-test.html">اختبار المستوى</a>
+        <a href="results.html" data-requires-test="true">النتيجة والخطة</a>
+        <a href="register.html" data-requires-test="true">التسجيل</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top: 18px; padding-bottom: 54px">
+    <noscript>
+      <div class="card" style="border-color: rgba(255,107,107,.35)">
+        <h2 class="m0">يلزم تفعيل JavaScript</h2>
+        <p class="muted">الاختبار يعمل بالكامل داخل المتصفح. فعّل JavaScript ثم أعد تحميل الصفحة.</p>
+      </div>
+    </noscript>
+
+    <!-- Step 1: Profile -->
+    <section class="card" id="profileStage">
+      <div class="sectionTitle">
+        <h1 class="m0">ابدأ باختبار تحديد المستوى</h1>
+        <span class="badge">خطوة 1 من 2</span>
+      </div>
+      <p class="muted">هذه البيانات تساعدنا نطلع لك خطة واقعية (حسب وقت اختبارك وساعات مذاكرتك).</p>
+
+      <form id="profileForm" class="form">
+        <div class="grid2">
+          <div>
+            <label>موعد الاختبار</label>
+            <select name="examDate" required>
+              <option value="">اختر…</option>
+              <option value="7">خلال 7 أيام</option>
+              <option value="14">خلال 14 يوم</option>
+              <option value="30">خلال شهر</option>
+              <option value="60">أكثر من شهر</option>
+              <option value="0">لسا ما حجزت</option>
+            </select>
+          </div>
+          <div>
+            <label>مستواك الحالي (تقدير ذاتي)</label>
+            <select name="selfLevel" required>
+              <option value="">اختر…</option>
+              <option value="beginner">مبتدئ</option>
+              <option value="intermediate">متوسط</option>
+              <option value="advanced">متقدم</option>
+            </select>
+          </div>
+
+          <div>
+            <label>هل اختبرت STEP قبل؟</label>
+            <select name="testedBefore" required>
+              <option value="">اختر…</option>
+              <option value="no">لا</option>
+              <option value="yes">نعم</option>
+            </select>
+          </div>
+          <div>
+            <label>درجتك السابقة (إن وُجدت)</label>
+            <input type="number" name="prevScore" min="0" max="100" placeholder="مثال: 78" />
+          </div>
+
+          <div>
+            <label>الدرجة المستهدفة</label>
+            <input type="number" name="targetScore" min="60" max="100" required placeholder="من 60 إلى 100" />
+          </div>
+          <div>
+            <label>ساعات المذاكرة يوميًا</label>
+            <select name="hoursPerDay" required>
+              <option value="">اختر…</option>
+              <option value="1">ساعة</option>
+              <option value="2">ساعتين</option>
+              <option value="3">3 ساعات</option>
+              <option value="4">4+ ساعات</option>
+            </select>
+          </div>
+
+          <div>
+            <label>طريقة مذاكرتك المفضلة</label>
+            <select name="studyStyle" required>
+              <option value="">اختر…</option>
+              <option value="video">فيديو + تطبيق</option>
+              <option value="pdf">ملفات PDF + حل</option>
+              <option value="mixed">مختلط</option>
+            </select>
+          </div>
+          <div>
+            <label>منطقة الاختبار (اختياري)</label>
+            <select name="region">
+              <option value="">اختر…</option>
+              <option value="riyadh">الرياض</option>
+              <option value="jeddah">جدة</option>
+              <option value="eastern">الشرقية</option>
+              <option value="qassim">القصيم</option>
+              <option value="makkah">مكة</option>
+              <option value="madinah">المدينة</option>
+              <option value="other">أخرى</option>
+            </select>
+          </div>
+
+          <div>
+            <label>وسيلة تواصل (اختياري)</label>
+            <select name="contactType">
+              <option value="">بدون</option>
+              <option value="telegram">تليجرام</option>
+              <option value="whatsapp">واتساب</option>
+              <option value="email">إيميل</option>
+            </select>
+          </div>
+          <div>
+            <label>معرّف/رقم/إيميل (اختياري)</label>
+            <input type="text" name="contactValue" placeholder="مثال: @username أو 05xxxxxxxx أو email" />
+          </div>
+        </div>
+
+        <div class="actions">
+          <button type="submit" class="btn btnPrimary">ابدأ الأسئلة (20 سؤال)</button>
+          <button type="button" class="btn" id="resetAll">مسح بياناتي المحلية</button>
+        </div>
+        <p class="hint">خصوصية: هذه البيانات تُحفظ على جهازك فقط (LocalStorage) ولا تُرسل لأي سيرفر.</p>
+      </form>
+    </section>
+
+    <!-- Step 2: Test -->
+    <section class="card hidden" id="testStage" aria-live="polite">
+      <div class="sectionTitle">
+        <h2 class="m0">الاختبار</h2>
+        <span class="badge" id="progressBadge">1/20</span>
+      </div>
+
+      <div class="progress"><div class="bar" id="progressBar"></div></div>
+
+      <div class="mt16" id="questionArea">
+        <!-- injected -->
+      </div>
+
+      <div class="actions">
+        <button type="button" class="btn" id="prevBtn">السابق</button>
+        <button type="button" class="btn btnPrimary" id="nextBtn">التالي</button>
+      </div>
+
+      <div class="hint" id="testHint">اختر إجابة واحدة ثم التالي. يمكنك الرجوع للسؤال السابق إذا احتجت.</div>
+    </section>
+
+    <!-- Finish -->
+    <section class="card hidden" id="finishStage">
+      <h2 class="m0">جاهز ✅</h2>
+      <p class="muted">تم حفظ نتيجتك وخطتك. انتقل الآن لصفحة النتائج والخطة.</p>
+      <div class="actions">
+        <a class="btn btnPrimary" href="results.html">عرض النتيجة والخطة</a>
+      </div>
+    </section>
+
+    <section class="card mt22">
+      <div class="sectionTitle">
+        <h3 class="m0">معلومة سريعة</h3>
+        <span class="badge">ليش 20 سؤال؟</span>
+      </div>
+      <p class="muted">الهدف مو “اختبار نهائي”… الهدف نطلع صورة سريعة عن نقاط قوتك وضعفك عشان نخلي الخطة مركّزة.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <div class="footer__title">أكاديمية عايد الرسمية</div>
+        <div class="muted">دورة STEP المكثفة 2026 — اختبار تحديد مستوى → خطة → بعدها يظهر التسجيل.</div>
+      </div>
+      <div class="footer__links">
+        <a href="privacy.html">الخصوصية</a>
+        <a href="terms.html">الشروط</a>
+        <a href="refund.html">الاسترجاع</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Assistant -->
+  <div id="assistant" class="assistant" aria-live="polite">
+    <button id="assistantFab" class="assistantFab" type="button" aria-label="مساعد التسجيل">
+      <span class="dot"></span>
+      <span>مساعد</span>
+    </button>
+
+    <div id="assistantPanel" class="assistantPanel" role="dialog" aria-modal="false" aria-label="مساعد التسجيل">
+      <div class="assistantHead">
+        <div>
+          <div class="assistantTitle">مساعد التسجيل</div>
+          <div class="assistantSub">يوجهك بسرعة… بدون لف ودوران</div>
+        </div>
+        <button id="assistantClose" class="assistantClose" type="button" aria-label="إغلاق">✕</button>
+      </div>
+
+      <div class="assistantBody">
+        <div class="assistantMsg">الخطوة الآن: كمّل البيانات… ثم تبدأ الأسئلة.</div>
+        <div class="qa">
+          <button type="button" data-go="index.html">الرئيسية</button>
+          <button type="button" data-go="course-content.html">محتوى الدورة</button>
+          <button type="button" data-go="faq.html">الأسئلة الشائعة</button>
+          <button type="button" data-go="support.html">الدعم</button>
+        </div>
+        <div class="assistantHint">إذا عندك شك… كمل الاختبار أولاً؛ بعدها كل شيء يصير أوضح.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toasts" aria-live="polite" aria-relevant="additions"></div>
+
+  <script src="./assets/js/questions.js" defer></script>
+  <script src="./assets/js/app.js" defer></script>
+  <script src="./assets/js/level-test.js" defer></script>
+</body>
+</html>
